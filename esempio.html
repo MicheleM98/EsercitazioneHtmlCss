@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esempio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-container" id="body">
+        <div id="rettangolo1">
+            <h1 id="componente">Componenti</h1>
+            <a class="linkComp" href="#contatto">Modulo di contatto</a>
+            <br>
+            <a class="linkComp" href="#chat">Chat</a>
+            <br>
+            <a class="linkComp" href="#stylish">Stylish Table</a>
+            <p id="textComp">&lt;/&gt; by Pasquale</p>
+        </div>
+        <div>
+            <h1 id="contatto" class="titolo"># Modulo di contatto</h1>
+            <div>
+                <p class="firstpar">Ciao!</p>
+                <p class="firstpar">
+                    Mi chiamo <input class="text" type="text" placeholder="Nome e Cognome" /> e al momento
+                    <input class="text" type="text" placeholder="Occupazione" /> .
+                </p>
+                <p class="firstpar">Mi farebbe piacere partecipare a Ninja Campus perchè</p>
+                <textarea id="textarea" cols="100" rows="2" class="text" placeholder="Introduzione personale"></textarea>
+                <p class="firstpar">Il mio numero è <input class="text" type="text" placeholder="Contatto telefonico" /></p>
+                <p class="firstpar">o potete contattarmi all'indirizzo email <input class="text" type="text"
+                        placeholder="Contatto email" />.</p>
+                <textarea id="textarea" cols="100" rows="2"  class="text" placeholder="Domande e dettagli"></textarea>
+                <p class="firstpar" id="grz">Grazie.</p>
+            </div>
+            <div id="rettangolo2">
+                <a href="#" class="button" id="button1">Invia Messaggio ></a>
+            </div>
+            <h1 id="chat" class="titolo"># Chat</h1>
+            <div id="rettangolo3">
+                <div class="flex-container">
+                    <img src="img/chat@2x.png" alt="Aldo Baglio">
+                    <div>
+                        <p id="aldo">Aldo Baglio</p>
+                        <p id="lastSeen">Ultimo accesso: 3 ore fa</p>
+                    </div>
+                </div>
+                <div>
+                    <dl>
+                        <dt id="msg1" class="msgAldo">Ciao, come posso aiutarti?</dt>
+                        <dd id="msg2" class="msgUser">Vorrei un etto di prosciutto</dd>
+                        <dt id="msg3" class="msgAldo">Ecco a te!</dt>
+                    </dl>
+                    <div id="rettangolo10">
+
+                    </div>
+                </div>
+            </div>
+            <div id="rettangolo5">
+                <div id="rettangolo6">
+                    <textarea id="msg" class="textarea" cols="100" placeholder="Scrivi un messaggio..."></textarea>
+                    <a href="#" class="button" id="button3">Invia Messaggio ></a>
+                </div>
+            </div>
+            <h1 id="stylish" class="titolo"># Stylish table</h1>
+            <a href="#" class="button">Ricarica Dati</a>
+            <table>
+                <tr id="tabella1">
+                    <td>Cliente</td>
+                    <td>Età</td>
+                    <td>Posizione</td>
+                    <td>Azioni</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="id1" src="img/chat.png" alt="Aldo Baglio"><label for="#id1">Aldo Baglio</label>
+                    </td>
+                    <td>32</td>
+                    <td>Comico Professionista</td>
+                    <td><a href="#">Cancella</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="id2" src="img/chat.png" alt="Aldo Baglio"><label for="#id2">Aldo Baglio</label>
+                    </td>
+                    <td>32</td>
+                    <td>Comico Professionista</td>
+                    <td><a href="#">Cancella</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="id3" src="img/chat.png" alt="Aldo Baglio"><label for="#id3">Aldo Baglio</label>
+                    </td>
+                    <td>32</td>
+                    <td>Comico Professionista</td>
+                    <td><a href="#">Cancella</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="id4" src="img/chat.png" alt="Aldo Baglio"><label for="#id4">Aldo Baglio</label>
+                    </td>
+                    <td>32</td>
+                    <td>Comico Professionista</td>
+                    <td><a href="#">Cancella</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

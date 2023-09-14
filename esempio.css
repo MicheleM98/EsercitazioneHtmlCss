@@ -1,0 +1,173 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#componente {
+    margin-top: 38px;
+    margin-left: 30px;
+    margin-right: 87px;
+    text-align: left;
+    font: normal normal bold 30px/38px Source Code Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.linkComp {
+    margin-left: 30px;
+    margin-right: 87px;
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 13px/17px Source Code Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#textComp {
+    margin-left: 30px;
+    margin-right: 87px;
+    margin-top:668px;
+    text-align: left;
+    font: normal normal bold 13px/17px Source Code Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.firstpar {
+    text-align: left;
+    font: normal normal normal 22px/39px Source Code Pro;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+#rettangolo1{
+    background: #90CCAC 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#rettangolo2 {
+    background: #EAEAEA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.titolo {
+    text-align: left;
+    font: normal normal normal 40px/50px Source Code Pro;
+    letter-spacing: 0px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    opacity: 1;
+}
+
+#rettangolo3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B6BDC1;
+    opacity: 1;
+}
+
+#rettangolo5 {
+    background: #F4F6F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#rettangolo6 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+#rettangolo11 {
+    background: #E6F7FF 0% 0% no-repeat padding-box;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 1;
+}
+
+.text {
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#textarea, .textarea {
+    resize: none;
+}
+
+.button {
+    background: #EAEAEA 0% 0% no-repeat padding-box;
+    text-align: left;
+    font: normal normal normal 22px/28px Source Code Pro;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#tabella1 {
+    background: #AEBED8 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.msg {
+    text-align: left;
+    font: normal normal normal 14px/18px Source Code Pro;
+    letter-spacing: 0px;
+    color: #CCCCCC;
+    opacity: 1;
+}
+
+#aldo {
+    text-align: left;
+    font: normal normal normal 22px/28px Source Code Pro;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+#lastSeen {
+    text-align: left;
+    font: normal normal normal 13px/17px Source Code Pro;
+    letter-spacing: 0px;
+    color: #CCCCCC;
+    opacity: 1;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#msg1,#msg2,#msg3 {
+    text-align: left;
+    font: normal normal normal 14px/18px Source Code Pro;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.msgAldo{
+    background: #E6F7FF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.msgUser {
+    background: #F4F6F7 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+#rettangolo10 {
+    background: #F4F6F7 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+
+}
