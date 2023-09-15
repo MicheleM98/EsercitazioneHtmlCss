@@ -6,13 +6,23 @@ html,body {
 body {
     display: flex;
 }
-
 .flex2 {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 200px;
-    background: #90CCAC 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+.bgGreen{
+    background: #90CCAC 0% 0% no-repeat padding-box;
+}
+.flex3{
+    display: flex;
+    align-items: center;
+}
+.flex4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .boxComponenti {
     position: fixed;
@@ -100,24 +110,28 @@ body {
     text-decoration: none;
 }
 .blocco2 {
+    position: relative;
     padding: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #B6BDC1;
     opacity: 1;
 }
-#aldo {
-    text-align: left;
+.aldo {
     font: normal normal normal 22px/28px Source Code Pro;
-    letter-spacing: 0px;
     color: #333333;
+}
+.lastSeen {
+    font: normal normal normal 13px/17px Source Code Pro;
     opacity: 1;
 }
-#lastSeen {
-    text-align: left;
-    font: normal normal normal 13px/17px Source Code Pro;
-    letter-spacing: 0px;
-    color: #CCCCCC;
-    opacity: 1;
+.boxMsg {
+    position: absolute;
+}
+.left {
+    left: 30px;
+}
+.right{
+    right:30px;
 }
 .chatMsg {
     width: 290px;
@@ -150,9 +164,4 @@ body {
     background: #AEBED8 0% 0% no-repeat padding-box;
     opacity: 1;
     color: #FFFFFF;
-}
-.flex3 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
