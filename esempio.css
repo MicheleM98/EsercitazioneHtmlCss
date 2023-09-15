@@ -122,7 +122,7 @@ body {
 }
 .lastSeen {
     font: normal normal normal 13px/17px Source Code Pro;
-    opacity: 1;
+    color: #CCCCCC;
 }
 .boxMsg {
     position: relative;
