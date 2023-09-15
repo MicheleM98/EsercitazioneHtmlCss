@@ -125,13 +125,13 @@ body {
     opacity: 1;
 }
 .boxMsg {
-    position: absolute;
+    position: relative;
 }
 .left {
-    left: 30px;
+    left: 0;
 }
 .right{
-    right:30px;
+    right: -370px;
 }
 .chatMsg {
     width: 290px;
