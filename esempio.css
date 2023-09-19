@@ -152,14 +152,14 @@ body {
     font-family: Source Code Pro;
 }
 .miniButton {
-    padding-top: 17px;
-    padding-bottom: 19px;
-    padding-left: 16px;
-    padding-right: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 15px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 14px;
     font-family: Source Code Pro;
     text-align: center;
     justify-content: center;
@@ -169,6 +169,7 @@ body {
 .txtMessage {
     height: 46px;
     border-radius: 5px 0 0 5px;
+    line-height: 45px;
 }
 .bgAzzurro {
     background: #E6F7FF 0% 0% no-repeat padding-box;
