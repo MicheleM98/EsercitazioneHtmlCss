@@ -78,8 +78,8 @@ body {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .blocco {
-    padding-bottom: 15px;
-    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
 .firstpar {
     font-style: normal;
