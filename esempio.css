@@ -90,6 +90,7 @@ body {
     color: #333333;
 }
 .secondPar {
+    padding-left: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -215,7 +216,9 @@ body {
     font-family: Source Code Pro;
     color: #333333;
     border-radius: 5px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
 }
 .msgAldo {
     background: #E6F7FF 0% 0% no-repeat padding-box;
