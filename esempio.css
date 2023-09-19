@@ -174,10 +174,12 @@ body {
 }
 .blocco2 {
     position: relative;
-    padding: 30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #B6BDC1;
     opacity: 1;
+    padding-left: 40px;
+    padding-bottom: 76px;
+    padding-top: 46px;
 }
 .aldo {
     font-style: normal;
@@ -202,7 +204,7 @@ body {
     left: 0;
 }
 .right{
-    right: -370px;
+    right: -497px;
 }
 .chatMsg {
     width: 290px;
