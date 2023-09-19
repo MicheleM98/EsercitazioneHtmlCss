@@ -103,7 +103,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     font-family: Source Code Pro;
-    border-bottom: dotted 2px #333333;
+    border-bottom: dashed 1.5px #333333;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -116,7 +116,7 @@ body {
     resize: none
 }
 .textarea1 {
-    background-image: url(img/dot1.png);
+    background-image: url();
     background-position: 0% 100%;
     font-style: italic;
     font-variant: normal;
