@@ -116,8 +116,8 @@ body {
     resize: none
 }
 .textarea1 {
-    background-image: url();
-    background-position: 0% 100%;
+    background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
+        repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #333333 0 1.5em);
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
