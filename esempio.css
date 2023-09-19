@@ -99,10 +99,10 @@ body {
     color: #333333;
 }
 .textBox {
-    font-style: normal;
+    font-style: italic;
     font-variant: normal;
-    font-weight: italic;
-    font-size: 14px;
+    font-weight: 300;
+    font-size: 20px;
     font-family: Source Code Pro;
     border-bottom: dotted 2px #333333;
     border-top: none;
@@ -118,10 +118,10 @@ body {
 }
 .textarea1 {
     background: url(img/dot-bg2.jpg);
-    font-style: normal;
+    font-style: italic;
     font-variant: normal;
-    font-weight: italic;
-    font-size: 14px;
+    font-weight: 300;
+    font-size: 20px;
     font-family: Source Code Pro;
 }
 .button-container {
@@ -132,7 +132,6 @@ body {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
 .button {
-    padding: 15px;
     background: #EAEAEA 0% 0% no-repeat;
     text-align: left;
     letter-spacing: 0px;
@@ -141,6 +140,10 @@ body {
     text-decoration: none;
 }
 .bigButton {
+    padding-left: 27px;
+    padding-right: 34px;
+    padding-top: 20px;
+    padding-bottom: 19px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -148,6 +151,10 @@ body {
     font-family: Source Code Pro;
 }
 .miniButton {
+    padding-top: 17px;
+    padding-bottom: 19px;
+    padding-left: 16px;
+    padding-right: 22px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -159,7 +166,7 @@ body {
     border-radius: 0 5px 5px 0;
 }
 .txtMessage {
-    height: 41px;
+    height: 46px;
     border-radius: 5px 0 0 5px;
 }
 .bgAzzurro {
