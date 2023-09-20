@@ -87,7 +87,7 @@ body {
     font-weight: normal;
     font-size: 22px;
     font-family: Source Code Pro;
-    color: #EAEAEA;
+    color: #ADADAD;
 }
 .secondPar {
     padding-left: 20px;
@@ -104,22 +104,29 @@ body {
     font-weight: 300;
     font-size: 20px;
     font-family: Source Code Pro;
-    border-bottom: dashed 1.5px #333333;
+    border-bottom: dashed 1.5px #ADADAD;
     border-top: none;
     border-left: none;
     border-right: none;
-    color: #EAEAEA;
+    color: #ADADAD;
+}
+input::placeholder{
+    color: #ADADAD;
+}
+textarea::placeholder{
+    color: #ADADAD;
 }
 .textBoxError {
     border-bottom-color: #ff0000;
 }
 .textarea {
     border: none;
-    resize: none
+    resize: none;
+    color: #ADADAD;
 }
 .textarea1 {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
-        repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #333333 0 1.5em);
+        repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
@@ -218,8 +225,8 @@ body {
     font-family: Source Code Pro;
     color: #333333;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 18px;
 }
 .msgAldo {
