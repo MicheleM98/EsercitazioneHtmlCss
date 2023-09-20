@@ -30,9 +30,9 @@
                 Mi chiamo <input class="textBox" type="text" placeholder="Nome e Cognome" /> e al momento
                 <input class="textBox" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja Campus perchè
             <br><textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Introduzione personale"></textarea>.
-            <br>Il mio numero è <input class="textBox textBoxError" type="text" placeholder="Contatto telefonico" />
-            <br>o potete contattarmi all'indirizzo email <input class="textBox textBoxError" type="text"
-                    placeholder="Contatto email" />.<br>
+            <br>Il mio numero è <label class="textError" title="TELEFONO NON VALIDO"><input class="textBox" type="text" placeholder="Contatto telefonico" required pattern="[0-9]{1,10}"/></label>
+            <br>o potete contattarmi all'indirizzo email <label class="textError" title="MAIL NON VALIDA"><input class="textBox" type="text"
+                    placeholder="Contatto email" required pattern="[.-z]{1,15}"/></label>.<br>
             <textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Domande e dettagli"></textarea>.
             <br>Grazie.</p><br>
             <div>
@@ -99,7 +99,7 @@
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
                 <div>
-                    <label>Aldo Baglio</label>
+                    <label class="nome-grid">Aldo Baglio</label>
                 </div>
             </div>
             <div class="grid-item grid-item2 grid-center">32</div>
@@ -112,7 +112,7 @@
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
                 <div>
-                    <label>Aldo Baglio</label>
+                    <label class="nome-grid">Aldo Baglio</label>
                 </div>
             </div>
             <div class="grid-item grid-item2 grid-center">32</div>
@@ -125,7 +125,7 @@
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
                 <div>
-                    <label>Aldo Baglio</label>
+                    <label class="nome-grid">Aldo Baglio</label>
                 </div>
             </div>
             <div class="grid-item grid-item2 grid-center">32</div>
@@ -138,7 +138,7 @@
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
                 <div>
-                    <label>Aldo Baglio</label>
+                    <label class="nome-grid">Aldo Baglio</label>
                 </div>
             </div>
             <div class="grid-item grid-item2 grid-center">32</div>
@@ -151,7 +151,7 @@
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
                 <div>
-                    <label>Aldo Baglio</label>
+                    <label class="nome-grid">Aldo Baglio</label>
                 </div>
             </div>
             <div class="grid-item grid-item2 grid-center">32</div>
