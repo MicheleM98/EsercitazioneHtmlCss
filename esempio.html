@@ -4,6 +4,7 @@
     <title>Esempio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
+    <script type="text/javascript" src="esempio.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
             <textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Domande e dettagli"></textarea>.
             <br>Grazie.</p><br>
             <div>
-                <a href="#" class="button bigButton">INVIA MESSAGGIO ></a>
+                <button onclick="controlloForm()" class="button bigButton">INVIA MESSAGGIO ></button>
             </div>
         </div>
         <h1 id="chat" class="titolo text"># Chat</h1>
@@ -78,7 +79,7 @@
                         <textarea class="textarea txtMessage" style="width: 99%;" placeholder="Scrivi un messaggio..."></textarea>
                     </div>
                     <div class="grid-item2">
-                        <a href="#" class="button miniButton bgAzzurro">Invia Messaggio ></a>
+                        <button onclick="inviaMessaggio()" class="button miniButton bgAzzurro">Invia Messaggio ></button>
                     </div>
                 </div>
             </div>
@@ -86,13 +87,13 @@
         <div class="flex3">
             <h1 id="stylish" class="titolo fontWhite"># Stylish table</h1>
             <div class="button-container">
-                <a href="#" class="button bigButton">Ricarica Dati</a>
+                <button onclick="caricaDati()" class="button bigButton">Ricarica Dati</button>
             </div>
         </div>
         <div class="grid-container">
             <div class="grid-item grid-item2 firstRow">Cliente</div>
-            <div class="grid-item grid-item2 firstRow">Età</div>
-            <div class="grid-item grid-item2 firstRow">Posizione</div>
+            <div class="grid-item grid-item2 firstRow">Email</div>
+            <div class="grid-item grid-item2 firstRow">Telefono</div>
             <div class="grid-item grid-item2 firstRow">Azioni</div>
             <div class="grid-item grid-item2 flex4">
                 <div>
@@ -105,7 +106,7 @@
             <div class="grid-item grid-item2 grid-center grid-center">32</div>
             <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
             <div class="grid-item grid-item2 grid-center grid-center">
-                <a href="#" class="grid-link">Cancella</a>
+                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
             </div>
             <div class="grid-item grid-item2 flex4">
                 <div>
@@ -118,7 +119,7 @@
             <div class="grid-item grid-item2 grid-center grid-center">32</div>
             <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
             <div class="grid-item grid-item2 grid-center grid-center">
-                <a href="#" class="grid-link">Cancella</a>
+                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
             </div>
             <div class="grid-item grid-item2 flex4">
                 <div>
@@ -131,7 +132,7 @@
             <div class="grid-item grid-item2 grid-center grid-center">32</div>
             <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
             <div class="grid-item grid-item2 grid-center grid-center">
-                <a href="#" class="grid-link">Cancella</a>
+                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
             </div>
             <div class="grid-item grid-item2 flex4">
                 <div>
@@ -144,7 +145,7 @@
             <div class="grid-item grid-item2 grid-center grid-center">32</div>
             <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
             <div class="grid-item grid-item2 grid-center grid-center">
-                <a href="#" class="grid-link">Cancella</a>
+                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
             </div>
             <div class="grid-item grid-item2 flex4">
                 <div>
@@ -157,7 +158,7 @@
             <div class="grid-item grid-item2 grid-center grid-center">32</div>
             <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
             <div class="grid-item grid-item2 grid-center grid-center">
-                <a href="#" class="grid-link">Cancella</a>
+                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
             </div>
         </div>
     </div>
