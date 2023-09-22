@@ -27,18 +27,23 @@
         <h1 id="contatto" class="titolo text"># Modulo di contatto</h1>
         <div class="blocco">
             <p class="firstpar text">Ciao!</p><br>
-            <p class="firstpar text">
-                Mi chiamo <input class="textBox" type="text" placeholder="Nome e Cognome" /> e al momento
-                <input class="textBox" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja Campus perchè
-            <br><textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Introduzione personale"></textarea>.
-            <br>Il mio numero è <label class="textError" title="TELEFONO NON VALIDO"><input class="textBox" type="text" placeholder="Contatto telefonico" required pattern="[0-9]{1,10}"/></label>
-            <br>o potete contattarmi all'indirizzo email <label class="textError" title="MAIL NON VALIDA"><input class="textBox" type="text"
-                    placeholder="Contatto email" required pattern="[.-z]{1,15}"/></label>.<br>
-            <textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Domande e dettagli"></textarea>.
-            <br>Grazie.</p><br>
-            <div>
-                <button onclick="controlloForm()" class="button bigButton">INVIA MESSAGGIO ></button>
-            </div>
+            <form id="form1" action="#">
+                <p class="firstpar text">
+                    Mi chiamo <input class="textBox" type="text" placeholder="Nome e Cognome" /> e al momento
+                    <input class="textBox" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja Campus
+                    perchè
+                    <br><textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Introduzione personale"></textarea>.
+                    <br>Il mio numero è <label id="phoneError" class="textError" title=""><input id="phone" class="textBox" type="text"
+                            placeholder="Contatto telefonico"/></label>
+                    <br>o potete contattarmi all'indirizzo email <label id="mailError" class="textError" title=""><input id="email" class="textBox"
+                            type="text" placeholder="Contatto email"/></label>.<br>
+                    <textarea cols="66" rows="3" class="text textarea textarea1" placeholder="Domande e dettagli"></textarea>.
+                    <br>Grazie.
+                </p><br>
+                <div>
+                    <button type="submit" class="button bigButton">INVIA MESSAGGIO ></button>
+                </div>
+            </form>
         </div>
         <h1 id="chat" class="titolo text"># Chat</h1>
         <div class="blocco">
@@ -95,71 +100,6 @@
             <div class="grid-item grid-item2 firstRow">Email</div>
             <div class="grid-item grid-item2 firstRow">Telefono</div>
             <div class="grid-item grid-item2 firstRow">Azioni</div>
-            <div class="grid-item grid-item2 flex4">
-                <div>
-                    <img src="img/grid.png" alt="Aldo Baglio">
-                </div>
-                <div>
-                    <label class="nome-grid">Aldo Baglio</label>
-                </div>
-            </div>
-            <div class="grid-item grid-item2 grid-center grid-center">32</div>
-            <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
-            <div class="grid-item grid-item2 grid-center grid-center">
-                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-            </div>
-            <div class="grid-item grid-item2 flex4">
-                <div>
-                    <img src="img/grid.png" alt="Aldo Baglio">
-                </div>
-                <div>
-                    <label class="nome-grid">Aldo Baglio</label>
-                </div>
-            </div>
-            <div class="grid-item grid-item2 grid-center grid-center">32</div>
-            <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
-            <div class="grid-item grid-item2 grid-center grid-center">
-                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-            </div>
-            <div class="grid-item grid-item2 flex4">
-                <div>
-                    <img src="img/grid.png" alt="Aldo Baglio">
-                </div>
-                <div>
-                    <label class="nome-grid">Aldo Baglio</label>
-                </div>
-            </div>
-            <div class="grid-item grid-item2 grid-center grid-center">32</div>
-            <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
-            <div class="grid-item grid-item2 grid-center grid-center">
-                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-            </div>
-            <div class="grid-item grid-item2 flex4">
-                <div>
-                    <img src="img/grid.png" alt="Aldo Baglio">
-                </div>
-                <div>
-                    <label class="nome-grid">Aldo Baglio</label>
-                </div>
-            </div>
-            <div class="grid-item grid-item2 grid-center grid-center">32</div>
-            <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
-            <div class="grid-item grid-item2 grid-center grid-center">
-                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-            </div>
-            <div class="grid-item grid-item2 flex4">
-                <div>
-                    <img src="img/grid.png" alt="Aldo Baglio">
-                </div>
-                <div>
-                    <label class="nome-grid">Aldo Baglio</label>
-                </div>
-            </div>
-            <div class="grid-item grid-item2 grid-center grid-center">32</div>
-            <div class="grid-item grid-item2 grid-center grid-center">Comico Professionista</div>
-            <div class="grid-item grid-item2 grid-center grid-center">
-                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-            </div>
         </div>
     </div>
 </body>

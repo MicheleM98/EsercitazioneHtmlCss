@@ -1,48 +1,75 @@
+window.addEventListener('load', function () {
+    const form = document.getElementById('form1');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        controlloForm();
+    })
+})
+
 function controlloForm() {
-    console.log('form validata');
+    const phone = document.getElementById("phone");
+    const email = document.getElementById("email");
+    const phoneValue = phone.value;
+    const emailValue = email.value;
+    let lblPhoneError = document.getElementById('phoneError');
+    let lblMailError = document.getElementById('mailError');
+
+    if (isNaN(phoneValue) || phoneValue.length < 1) {
+        phone.style.borderColor = "#FF0000";
+        lblPhoneError.setAttribute('title','TELEFONO NON VALIDO');
+    } else {
+        phone.style.borderColor = "#ADADAD";
+        lblPhoneError.setAttribute('title','');
+
+    }
+    if (emailValue.indexOf("@") === -1 || emailValue.indexOf(".") === -1) {
+        email.style.borderColor = "#FF0000";
+        lblMailError.setAttribute('title','MAIL NON VALIDA');
+
+    } else {
+        email.style.borderColor = "#ADADAD";
+        lblMailError.setAttribute('title','');
+    }
 }
 
 function inviaMessaggio() {
     console.log('messaggio inviato');
 }
 
-const grid = [
-    0 [item1, item2, item3, item4]
-]
-
-function caricaDati() {
-    var xhttp = new XMLHttpRequest();
+async function caricaDati() {
     const grid = document.getElementById("grid");
-    xhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
-    xhttp.send();
-    xhttp.onload = () => {
-        console.log(xhttp);
-        if (xhttp.status === 200) {
-            const parsedJSON = JSON.parse(xhttp.response)
-            parsedJSON.forEach(element => {
-                let name = `<div class="grid-item grid-item2 grid-center grid-center">` + element.name + `</div>`;
-                let email = `<div class="grid-item grid-item2 grid-center grid-center">` + element.email + `</div>`;
-                let phone = `<div class="grid-item grid-item2 grid-center grid-center">` + element.phone + `</div>`;
-                let action = `<div class="grid-item grid-item2 grid-center grid-center">
-                                <button onclick="cancellaRecord()" class="grid-link">Cancella</button>
-                            </div>`;
-                let div = document.createElement("div");
-                div.innerHTML = name + email + phone + action;
-                console.log(div);
-                document.body.appendChild(div); 
-            });
-        } else {
-            console.log(`error ${xhttp.status} ${xhttp.statusText}`);
-        }
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    grid.innerHTML = '';
+
+    const headings = ['Clienti', 'Email', 'Telefono', 'Azioni'];
+
+    for (const heading of headings) {
+        const div = document.createElement('div');
+        div.classList.add('grid-item', 'grid-item2', 'firstRow');
+        div.innerText = heading;
+        grid.append(div);
     }
+
+    data.forEach((element, index) => {
+        grid.append(...['name', 'email', 'phone'].map(item => {
+            const div = document.createElement('div');
+            div.classList.add('grid-item', 'grid-item2', 'grid-center');
+            div.innerText = element[item]
+            return div;
+        }))
+
+        const button = document.createElement('button');
+        button.classList.add('grid-link');
+
+        button.onclick = () => cancellaRecord(index);
+
+        button.innerText = 'Cancella';
+        grid.append(button);
+    });
 }
 
-function cancellaRecord() {
-    var record = document.getElementById(recordId);
-    var grid = record.parentNode;
-    while ( grid && grid.tagName != 'TABLE' )
-        grid = grid.parentNode;
-    if ( !grid )
-        return;
-    grid.deleteRow(record.rowIndex);
+function cancellaRecord(index) {
+    console.log("Bottone Cancella", index)
 }
