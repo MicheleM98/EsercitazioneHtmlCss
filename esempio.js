@@ -34,7 +34,17 @@ function controlloForm() {
 }
 
 function inviaMessaggio() {
-    console.log('messaggio inviato');
+    const chat = document.getElementById("chat");
+    const text = document.getElementById("txtMessage").value;
+    const div = document.createElement('div');
+    const p = document.createElement('p');
+    p.classList.add('msgUser', 'chatMsg', 'text', 'boxMsg', 'right');
+    p.setAttribute('value', text);
+    const lbl = document.createElement('label');
+    lbl.classList.add('triangle-bottom');
+    div.appendChild(p);
+    div.appendChild(lbl);
+    console.log(div);
 }
 
 async function caricaDati() {
