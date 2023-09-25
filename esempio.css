@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 
-.boxComponenti {
+.box-components {
     position: fixed;
 }
 
@@ -45,7 +45,7 @@ body {
     bottom: 0;
 }
 
-.componente {
+.component {
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
@@ -54,13 +54,13 @@ body {
     color: #FFFFFF;
 }
 
-.linkComp {
+.link-comp {
     font-size: 13px;
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
-#textComp {
+.text-comp {
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
@@ -85,7 +85,7 @@ body {
     padding-left: 80px;
 }
 
-.firstpar {
+.first-par {
     font-size: 22px;
     font-family: Source Code Pro;
     color: #ADADAD;
@@ -93,14 +93,14 @@ body {
     line-height: 35px;
 }
 
-.secondPar {
+.second-par {
     padding-left: 20px;
     font-size: 14px;
     font-family: Source Code Pro;
     color: #333333;
 }
 
-.textBox {
+.text-box {
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
@@ -129,13 +129,13 @@ input:invalid {
     border-color: red;
 }
 
-.textarea {
+.text-area {
     border: none;
     resize: none;
     color: #ADADAD;
 }
 
-.textarea1 {
+.text-area1 {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
@@ -163,7 +163,7 @@ input:invalid {
     text-decoration: none;
 }
 
-.bigButton {
+.big-button {
     padding-left: 27px;
     padding-right: 34px;
     padding-top: 20px;
@@ -172,7 +172,7 @@ input:invalid {
     font-family: Source Code Pro;
 }
 
-.miniButton {
+.mini-button {
     padding-top: 20px;
     padding-bottom: 16px;
     padding-left: 10px;
@@ -185,7 +185,7 @@ input:invalid {
     border-radius: 0 5px 5px 0;
 }
 
-.txtMessage {
+.text-message {
     height: 46px;
     border-radius: 5px 0 0 5px;
     line-height: 45px;
@@ -194,7 +194,7 @@ input:invalid {
     font-family: Source Code Pro;
 }
 
-.bgAzzurro {
+.sky-blue-background {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
 
@@ -208,19 +208,19 @@ input:invalid {
     padding-top: 46px;
 }
 
-.aldo {
+.user {
     font-size: 22px;
     font-family: Source Code Pro;
     color: #333333;
 }
 
-.lastSeen {
+.last-seen {
     font-size: 13px;
     font-family: Source Code Pro;
     color: #CCCCCC;
 }
 
-.boxMsg {
+.box-message {
     position: relative;
 }
 
@@ -232,7 +232,7 @@ input:invalid {
     right: -497px;
 }
 
-.chatMsg {
+.message {
     width: 290px;
     font-size: 14px;
     font-family: Source Code Pro;
@@ -243,11 +243,11 @@ input:invalid {
     padding-left: 18px;
 }
 
-.msgAldo {
+.receved-message {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
 
-.msgUser {
+.sent-message {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
 
@@ -265,7 +265,7 @@ input:invalid {
     text-align: center;
 }
 
-.firstRow {
+.first-row {
     background: #AEBED8 0% 0% no-repeat padding-box;
     padding: 35px;
     opacity: 1;
@@ -306,7 +306,7 @@ input:invalid {
     margin-left: 765px;
 }
 
-.textError::after {
+.text-error::after {
     color: #FF0000;
     display: block;
     position: absolute;
@@ -316,7 +316,7 @@ input:invalid {
     font-size: x-small;
 }
 
-.textError {
+.text-error {
     position: relative;
 }
 
