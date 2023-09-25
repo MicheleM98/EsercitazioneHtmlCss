@@ -20,7 +20,7 @@ body {
     opacity: 1;
 }
 
-.bgGreen {
+.green-background {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
 
@@ -69,12 +69,13 @@ body {
     color: #FFFFFF;
 }
 
-.titolo {
+.title {
     color: #FFFFFF;
     padding-bottom: 25px;
     padding-top: 61px;
     padding-left: 80px;
     font-size: 40px;
+    font-weight: 300;
     font-family: Source Code Pro;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -258,7 +259,7 @@ input:invalid {
 }
 
 .grid-item {
-    padding: 30px;
+    padding: 25px;
     font-size: 18px;
     font-family: Source Code Pro;
     text-align: center;
