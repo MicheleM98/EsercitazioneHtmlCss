@@ -4,8 +4,8 @@ $(document).ready(function () {
         controlloForm();
     });
 
-    $('#txtMessage').on('input', function () {
-        $('#txtMessage').css('border-color', '#ADADAD');
+    $('#textMessage').on('input', function () {
+        $('#textMessage').css('border-color', '#ADADAD');
     });
 });
 
@@ -36,12 +36,12 @@ function controlloForm() {
 
 function inviaMessaggio() {
     const chat = $('#chatBox');
-    const textArea = $('#txtMessage');
+    const textArea = $('#textMessage');
     let text = textArea.val();
     if(text !== '') {
         const div = $('<div></div>');
-        const p = $('<p></p>').addClass('msgUser chatMsg text boxMsg right').text(text);
-        const lbl = $('<p></p>').addClass('triangle-down');
+        const p = $('<p></p>').addClass('sent-message message box-message right font-normal').text(text);
+        const lbl = $('<p></p>').addClass(' triangle triangle-down');
         div.append(p);
         div.append(lbl);
         chat.append(div);
@@ -49,8 +49,8 @@ function inviaMessaggio() {
 
         setTimeout(() => {
             const divResponse = $('<div></div>');
-            const lblResponse = $('<p></p>').addClass('triangle-up');
-            const pResponse = $('<p></p>').addClass('msgAldo chatMsg text boxMsg left').text('Miiinchia!');
+            const lblResponse = $('<p></p>').addClass('triangle triangle-up');
+            const pResponse = $('<p></p>').addClass('receved-message message box-message left font-normal').text('Miiinchia!');
             divResponse.append(lblResponse);
             divResponse.append(pResponse);
             chat.append(divResponse);
@@ -67,17 +67,17 @@ async function caricaDati() {
     const headings = ['Clienti', 'Email', 'Telefono', 'Azioni'];
 
     for (const heading of headings) {
-        const div = $('<div></div>').addClass('grid-item grid-item2 firstRow').text(heading);
+        const div = $('<div></div>').addClass('grid-item font-normal first-row').text(heading);
         grid.append(div);
     }
 
     data.forEach((element, index) => {
         grid.append(...['name', 'email', 'phone'].map(item => {
-            const div = $('<div></div>').addClass('grid-item grid-item2 grid-center').attr('data-id', element.id).text(element[item]);
+            const div = $('<div></div>').addClass('grid-item font-normal grid-center').attr('data-id', element.id).text(element[item]);
             return div;
         }));
         
-        const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item grid-item2 grid-center');
+        const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item font-normal grid-center');
         const button = $('<button></button>').addClass('grid-link').text('Cancella');
         divButton.append(button);
         button.click(() => cancellaRecord(element.id));
