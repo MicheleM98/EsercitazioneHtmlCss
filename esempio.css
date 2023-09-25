@@ -1,3 +1,135 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 html,body {
     margin: 0;
     padding: 0;
@@ -6,40 +138,49 @@ html,body {
 body {
     display: flex;
 }
+
 .flex2 {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 297px;
     opacity: 1;
 }
-.bgGreen{
+
+.bgGreen {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
-.flex3{
+
+.flex3 {
     display: flex;
     align-items: center;
 }
+
 .flex4 {
     display: flex;
     align-items: center;
 }
+
 .boxComponenti {
     position: fixed;
 }
+
 .top {
     padding-left: 30px;
     padding-top: 38px;
     top: 0;
 }
-.bottom{
+
+.bottom {
     padding-left: 30px;
     padding-bottom: 30px;
     bottom: 0;
 }
+
 .text {
     letter-spacing: 0px;
     opacity: 1;
 }
+
 .componente {
     font-style: normal;
     font-variant:normal;
@@ -48,6 +189,7 @@ body {
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
+
 .linkComp {
     font-style: normal;
     font-variant: normal;
@@ -56,6 +198,7 @@ body {
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
+
 #textComp {
     font-style: normal;
     font-variant: normal;
@@ -64,11 +207,12 @@ body {
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
+
 .titolo {
     color: #FFFFFF;
     padding-bottom: 25px;
     padding-top: 25px;
-    padding-left: 80px;
+    padding-left: 86px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -76,10 +220,12 @@ body {
     font-family: Source Code Pro;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
 .blocco {
     padding-bottom: 50px;
-    padding-left: 80px;
+    padding-left: 86px;
 }
+
 .firstpar {
     font-style: normal;
     font-variant: normal;
@@ -88,6 +234,7 @@ body {
     font-family: Source Code Pro;
     color: #ADADAD;
 }
+
 .secondPar {
     padding-left: 20px;
     font-style: normal;
@@ -97,6 +244,7 @@ body {
     font-family: Source Code Pro;
     color: #333333;
 }
+
 .textBox {
     font-style: italic;
     font-variant: normal;
@@ -109,20 +257,25 @@ body {
     border-right: none;
     color: #ADADAD;
 }
+
 textarea, input {
     outline: none;
 }
-input::placeholder{
+
+input::placeholder {
     color: #ADADAD;
 }
-textarea::placeholder{
+
+textarea::placeholder {
     color: #ADADAD;
 }
+
 .textarea {
     border: none;
     resize: none;
     color: #ADADAD;
 }
+
 .textarea1 {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
@@ -132,13 +285,16 @@ textarea::placeholder{
     font-size: 20px;
     font-family: Source Code Pro;
 }
+
 .button-container {
     padding-left: 50px;
     opacity: 1;
 }
+
 .rettangolo1 {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
+
 .button {
     background: #EAEAEA 0% 0% no-repeat;
     text-align: left;
@@ -147,6 +303,7 @@ textarea::placeholder{
     opacity: 1;
     text-decoration: none;
 }
+
 .bigButton {
     padding-left: 27px;
     padding-right: 34px;
@@ -158,6 +315,7 @@ textarea::placeholder{
     font-size: 22px;
     font-family: Source Code Pro;
 }
+
 .miniButton {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -173,14 +331,17 @@ textarea::placeholder{
     display: block;
     border-radius: 0 5px 5px 0;
 }
+
 .txtMessage {
     height: 46px;
     border-radius: 5px 0 0 5px;
     line-height: 45px;
 }
+
 .bgAzzurro {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
+
 .blocco2 {
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -190,6 +351,7 @@ textarea::placeholder{
     padding-bottom: 76px;
     padding-top: 46px;
 }
+
 .aldo {
     font-style: normal;
     font-variant: normal;
@@ -198,6 +360,7 @@ textarea::placeholder{
     font-family: Source Code Pro;
     color: #333333;
 }
+
 .lastSeen {
     font-style: normal;
     font-variant: normal;
@@ -206,15 +369,19 @@ textarea::placeholder{
     font-family: Source Code Pro;
     color: #CCCCCC;
 }
+
 .boxMsg {
     position: relative;
 }
+
 .left {
     left: 0;
 }
+
 .right{
     right: -497px;
 }
+
 .chatMsg {
     width: 290px;
     font-style: normal;
@@ -228,23 +395,28 @@ textarea::placeholder{
     padding-bottom: 10px;
     padding-left: 18px;
 }
+
 .msgAldo {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
+
 .msgUser {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
+
 .grid-container {
-    padding-left: 80px;
+    padding-left: 86px;
     padding-bottom: 150px;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
 .grid-item {
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .firstRow {
     background: #AEBED8 0% 0% no-repeat padding-box;
     padding-left: 30px;
@@ -253,6 +425,7 @@ textarea::placeholder{
     opacity: 1;
     color: #FFFFFF;
 }
+
 .grid-container2 {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -260,6 +433,7 @@ textarea::placeholder{
     display:flex;
     width: 859px;
 }
+
 .grid-item2 {
     font-style: normal;
     font-variant: normal;
@@ -267,14 +441,17 @@ textarea::placeholder{
     font-size: 13px;
     font-family: Source Code Pro;
 }
+
 .grid-link {
     color: #333333;
     text-decoration: underline;
     background-color: #FFFFFF;
 }
+
 .grid-center {
     line-height: 45px;
 }
+
 .triangle-up {
     width: 0;
     height: 0;
@@ -282,6 +459,7 @@ textarea::placeholder{
     border-right: 14px solid transparent;
     border-bottom: 28px solid #E6F7FF;
 }
+
 .triangle-down {
     width: 0;
     height: 0;
@@ -290,6 +468,7 @@ textarea::placeholder{
     border-top: 28px solid #F4F6F7;
     margin-left: 775px;
 }
+
 .textError::after {
     color: #FF0000;
     display: block;
@@ -299,12 +478,15 @@ textarea::placeholder{
     left: 0;
     font-size: x-small;
 }
+
 .textError {
     position: relative;
 }
+
 .nome-grid {
     padding-left: 15px;
 }
+
 button {
     border: none;
 }
