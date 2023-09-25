@@ -73,19 +73,19 @@ async function caricaDati() {
 
     data.forEach((element, index) => {
         grid.append(...['name', 'email', 'phone'].map(item => {
-            const div = $('<div></div>').addClass('grid-item grid-item2 grid-center').text(element[item]);
+            const div = $('<div></div>').addClass('grid-item grid-item2 grid-center').attr('data-id', element.id).text(element[item]);
             return div;
         }));
         
-        const divButton = $('<div></div>').addClass('grid-item grid-item2 grid-center');
+        const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item grid-item2 grid-center');
         const button = $('<button></button>').addClass('grid-link').text('Cancella');
         divButton.append(button);
-        button.click(() => cancellaRecord(index));
+        button.click(() => cancellaRecord(element.id));
 
         grid.append(divButton);
     });
 }
 
-function cancellaRecord(index) {
-    console.log('Bottone Cancella', index);
+function cancellaRecord(id) {
+    $(`.grid-center[data-id="${id}"]`).remove();
 }
