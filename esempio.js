@@ -41,7 +41,7 @@ function inviaMessaggio() {
     if(text !== '') {
         const div = $('<div></div>');
         const p = $('<p></p>').addClass('msgUser chatMsg text boxMsg right').text(text);
-        const lbl = $('<label></label>').addClass('triangle-down');
+        const lbl = $('<p></p>').addClass('triangle-down');
         div.append(p);
         div.append(lbl);
         chat.append(div);
@@ -49,7 +49,7 @@ function inviaMessaggio() {
 
         setTimeout(() => {
             const divResponse = $('<div></div>');
-            const lblResponse = $('<label></label>').addClass('triangle-up');
+            const lblResponse = $('<p></p>').addClass('triangle-up');
             const pResponse = $('<p></p>').addClass('msgAldo chatMsg text boxMsg left').text('Miiinchia!');
             divResponse.append(lblResponse);
             divResponse.append(pResponse);
