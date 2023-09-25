@@ -7,6 +7,12 @@ body {
     display: flex;
 }
 
+.font-normal {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
 .flex2 {
     flex-direction: column;
     padding-left: 20px;
@@ -41,7 +47,7 @@ body {
 
 .componente {
     font-style: normal;
-    font-variant:normal;
+    font-variant: normal;
     font-weight: bold;
     font-size: 30px;
     font-family: Source Code Pro;
@@ -49,9 +55,6 @@ body {
 }
 
 .linkComp {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 13px;
     font-family: Source Code Pro;
     color: #FFFFFF;
@@ -71,9 +74,6 @@ body {
     padding-bottom: 25px;
     padding-top: 25px;
     padding-left: 80px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 40px;
     font-family: Source Code Pro;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -85,9 +85,6 @@ body {
 }
 
 .firstpar {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 22px;
     font-family: Source Code Pro;
     color: #ADADAD;
@@ -95,9 +92,6 @@ body {
 
 .secondPar {
     padding-left: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     color: #333333;
@@ -171,9 +165,6 @@ input:invalid {
     padding-right: 34px;
     padding-top: 20px;
     padding-bottom: 19px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 22px;
     font-family: Source Code Pro;
 }
@@ -183,9 +174,6 @@ input:invalid {
     padding-bottom: 16px;
     padding-left: 10px;
     padding-right: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     text-align: center;
@@ -215,18 +203,12 @@ input:invalid {
 }
 
 .aldo {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 22px;
     font-family: Source Code Pro;
     color: #333333;
 }
 
 .lastSeen {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 13px;
     font-family: Source Code Pro;
     color: #CCCCCC;
@@ -246,9 +228,6 @@ input:invalid {
 
 .chatMsg {
     width: 290px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     color: #333333;
@@ -293,9 +272,6 @@ input:invalid {
 }
 
 .grid-item2 {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 13px;
     font-family: Source Code Pro;
 }
