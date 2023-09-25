@@ -1,10 +1,17 @@
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body {
     display: flex;
+}
+
+.font-normal {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
 }
 
 .flex2 {
@@ -14,7 +21,7 @@ body {
     opacity: 1;
 }
 
-.bgGreen {
+.green-background {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
 
@@ -23,12 +30,7 @@ body {
     align-items: center;
 }
 
-.flex4 {
-    display: flex;
-    align-items: center;
-}
-
-.boxComponenti {
+.box-components {
     position: fixed;
 }
 
@@ -44,30 +46,22 @@ body {
     bottom: 0;
 }
 
-.text {
-    letter-spacing: 0px;
-    opacity: 1;
-}
-
-.componente {
+.component {
     font-style: normal;
-    font-variant:normal;
+    font-variant: normal;
     font-weight: bold;
     font-size: 30px;
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
-.linkComp {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
+.link-comp {
     font-size: 13px;
     font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
-#textComp {
+.text-comp {
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
@@ -76,44 +70,38 @@ body {
     color: #FFFFFF;
 }
 
-.titolo {
+.title {
     color: #FFFFFF;
     padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 86px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
+    padding-top: 61px;
+    padding-left: 80px;
     font-size: 40px;
+    font-weight: 300;
     font-family: Source Code Pro;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.blocco {
+.group {
     padding-bottom: 50px;
-    padding-left: 86px;
+    padding-left: 80px;
 }
 
-.firstpar {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
+.first-par {
     font-size: 22px;
     font-family: Source Code Pro;
     color: #ADADAD;
+    padding-bottom: 36px;
+    line-height: 35px;
 }
 
-.secondPar {
+.second-par {
     padding-left: 20px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     color: #333333;
 }
 
-.textBox {
+.text-box {
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
@@ -126,7 +114,8 @@ body {
     color: #ADADAD;
 }
 
-textarea, input {
+textarea,
+input {
     outline: none;
 }
 
@@ -138,13 +127,17 @@ textarea::placeholder {
     color: #ADADAD;
 }
 
-.textarea {
+input:invalid {
+    border-color: red;
+}
+
+.text-area {
     border: none;
     resize: none;
     color: #ADADAD;
 }
 
-.textarea1 {
+.text-area1 {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
@@ -159,7 +152,7 @@ textarea::placeholder {
     opacity: 1;
 }
 
-.rettangolo1 {
+.gray-background {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
 
@@ -172,26 +165,20 @@ textarea::placeholder {
     text-decoration: none;
 }
 
-.bigButton {
+.big-button {
     padding-left: 27px;
     padding-right: 34px;
     padding-top: 20px;
     padding-bottom: 19px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 22px;
     font-family: Source Code Pro;
 }
 
-.miniButton {
-    padding-top: 16px;
+.mini-button {
+    padding-top: 20px;
     padding-bottom: 16px;
     padding-left: 10px;
     padding-right: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     text-align: center;
@@ -200,17 +187,20 @@ textarea::placeholder {
     border-radius: 0 5px 5px 0;
 }
 
-.txtMessage {
+.text-message {
     height: 46px;
     border-radius: 5px 0 0 5px;
     line-height: 45px;
+    padding-left: 25px;
+    font-size: 13px;
+    font-family: Source Code Pro;
 }
 
-.bgAzzurro {
+.sky-blue-background {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
 
-.blocco2 {
+.group2 {
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #B6BDC1;
@@ -220,25 +210,19 @@ textarea::placeholder {
     padding-top: 46px;
 }
 
-.aldo {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
+.user {
     font-size: 22px;
     font-family: Source Code Pro;
     color: #333333;
 }
 
-.lastSeen {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
+.last-seen {
     font-size: 13px;
     font-family: Source Code Pro;
     color: #CCCCCC;
 }
 
-.boxMsg {
+.box-message {
     position: relative;
 }
 
@@ -246,15 +230,12 @@ textarea::placeholder {
     left: 0;
 }
 
-.right{
+.right {
     right: -497px;
 }
 
-.chatMsg {
+.message {
     width: 290px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
     font-size: 14px;
     font-family: Source Code Pro;
     color: #333333;
@@ -264,100 +245,85 @@ textarea::placeholder {
     padding-left: 18px;
 }
 
-.msgAldo {
+.receved-message {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
 
-.msgUser {
+.sent-message {
     background: #F4F6F7 0% 0% no-repeat padding-box;
 }
 
 .grid-container {
-    padding-left: 86px;
+    padding-left: 80px;
     padding-bottom: 150px;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 
 .grid-item {
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 25px;
+    font-size: 18px;
+    font-family: Source Code Pro;
+    text-align: center;
 }
 
-.firstRow {
+.first-row {
     background: #AEBED8 0% 0% no-repeat padding-box;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 35px;
     opacity: 1;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .grid-container2 {
     display: grid;
     grid-template-columns: 70% 30%;
     padding: 10px;
-    display:flex;
+    display: flex;
     width: 859px;
-}
-
-.grid-item2 {
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 13px;
-    font-family: Source Code Pro;
 }
 
 .grid-link {
     color: #333333;
-    text-decoration: underline;
-    background-color: #FFFFFF;
 }
 
 .grid-center {
     line-height: 45px;
 }
 
-.triangle-up {
+.triangle {
     width: 0;
     height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
+}
+
+.triangle-up {
     border-bottom: 10px solid #E6F7FF;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 .triangle-down {
-    width: 0;
-    height: 0;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
     border-top: 10px solid #F4F6F7;
     margin-left: 765px;
 }
 
-.textError::after {
+.text-error::after {
     color: #FF0000;
     display: block;
     position: absolute;
     content: attr(title);
-    top: -5px;
+    top: -20px;
     left: 0;
     font-size: x-small;
 }
 
-.textError {
+.text-error {
     position: relative;
 }
 
 .nome-grid {
     padding-left: 15px;
-}
-
-button {
-    border: none;
 }
 
 /* CSS RESET */
