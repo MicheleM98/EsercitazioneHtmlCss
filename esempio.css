@@ -172,7 +172,7 @@ input:invalid {
 }
 
 .miniButton {
-    padding-top: 16px;
+    padding-top: 20px;
     padding-bottom: 16px;
     padding-left: 10px;
     padding-right: 15px;
@@ -189,6 +189,8 @@ input:invalid {
     border-radius: 5px 0 0 5px;
     line-height: 45px;
     padding-left: 25px;
+    font-size: 13px;
+    font-family: Source Code Pro;
 }
 
 .bgAzzurro {
@@ -256,14 +258,18 @@ input:invalid {
 }
 
 .grid-item {
-    padding: 20px;
+    padding: 30px;
+    font-size: 18px;
+    font-family: Source Code Pro;
+    text-align: center;
 }
 
 .firstRow {
     background: #AEBED8 0% 0% no-repeat padding-box;
-    padding: 30px;
+    padding: 35px;
     opacity: 1;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .grid-container2 {
@@ -272,11 +278,6 @@ input:invalid {
     padding: 10px;
     display:flex;
     width: 859px;
-}
-
-.grid-item2 {
-    font-size: 13px;
-    font-family: Source Code Pro;
 }
 
 .grid-link {
