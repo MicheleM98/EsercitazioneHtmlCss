@@ -76,12 +76,13 @@ async function caricaDati() {
             const div = $('<div></div>').addClass('grid-item grid-item2 grid-center').text(element[item]);
             return div;
         }));
-
+        
+        const divButton = $('<div></div>').addClass('grid-item grid-item2 grid-center');
         const button = $('<button></button>').addClass('grid-link').text('Cancella');
-
+        divButton.append(button);
         button.click(() => cancellaRecord(index));
 
-        grid.append(button);
+        grid.append(divButton);
     });
 }
 
