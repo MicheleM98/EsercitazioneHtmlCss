@@ -90,9 +90,6 @@ form p {
 }
 
 .second-par {
-    padding-left: 20px;
-    font-size: 14px;
-    color: #333333;
 }
 
 .text-box {
@@ -212,11 +209,11 @@ form textarea{
     position: relative;
 }
 
-.left {
+.left-message {
     left: 0;
 }
 
-.right {
+.right-message {
     margin-left: auto;
 }
 
@@ -325,8 +322,12 @@ form textarea{
     padding-top: 19px;
     padding-bottom: 17px;
     padding-left: 20px;
+    font-size: 14px;
+    color: #333333;
 }
 
 .gift-link {
     padding-left: 25%;
+    font-size: 14px;
+    color: #333333;
 }
