@@ -1,172 +1,39 @@
-/* CSS RESET */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     display: flex;
-    font-variant: normal;
+    font-family: Source Code Pro;
 }
 
-.font-normal {
-    font-style: normal;
-    font-weight: normal;
-}
-
-.flex-second {
+.lateral-menu {
     flex-direction: column;
-    padding-right: 297px;
+    padding-right: 300px;
 }
 
 .green-background {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
 
-.flex-tird {
+.chat-user {
     display: flex;
     align-items: center;
 }
 
-.box-components {
+.grid-user {
+    display: flex;
+    align-items: center;
+}
+
+.grid-title {
+    display: flex;
+    align-items: center;
+}
+
+.lateal-menu-elements {
     position: fixed;
 }
 
 .top {
     padding-left: 30px;
-    padding-top: 38px;
+    padding-top: 40px;
     top: 0;
 }
 
@@ -177,26 +44,21 @@ body {
 }
 
 .component {
-    font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
-.link-comp {
+.link-title {
     padding-bottom: 50px;
     font-weight: 400;
     font-size: 12px;
-    font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
 .text-comp {
-    font-style: normal;
     font-weight: bold;
     font-size: 13px;
-    font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
@@ -207,7 +69,6 @@ body {
     padding-left: 80px;
     font-size: 40px;
     font-weight: 300;
-    font-family: Source Code Pro;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -218,7 +79,6 @@ body {
 
 .first-par {
     font-size: 22px;
-    font-family: Source Code Pro;
     color: #ADADAD;
     padding-bottom: 36px;
     line-height: 35px;
@@ -227,7 +87,6 @@ body {
 .second-par {
     padding-left: 20px;
     font-size: 14px;
-    font-family: Source Code Pro;
     color: #333333;
 }
 
@@ -235,7 +94,6 @@ body {
     font-style: italic;
     font-weight: 300;
     font-size: 20px;
-    font-family: Source Code Pro;
     border-bottom: dashed 1.5px #ADADAD;
     border-top: none;
     border-left: none;
@@ -266,13 +124,11 @@ input:invalid {
     color: #ADADAD;
 }
 
-.text-area1 {
+.text-area-first {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
-    font-weight: normal;
     font-size: 20px;
-    font-family: Source Code Pro;
 }
 
 .button-container {
@@ -298,7 +154,6 @@ input:invalid {
     padding-top: 20px;
     padding-bottom: 19px;
     font-size: 22px;
-    font-family: Source Code Pro;
 }
 
 .mini-button {
@@ -307,7 +162,6 @@ input:invalid {
     padding-left: 10px;
     padding-right: 15px;
     font-size: 14px;
-    font-family: Source Code Pro;
     text-align: center;
     justify-content: center;
     display: block;
@@ -320,7 +174,6 @@ input:invalid {
     line-height: 45px;
     padding-left: 25px;
     font-size: 13px;
-    font-family: Source Code Pro;
 }
 
 .sky-blue-background {
@@ -338,13 +191,11 @@ input:invalid {
 
 .user {
     font-size: 22px;
-    font-family: Source Code Pro;
     color: #333333;
 }
 
 .last-seen {
     font-size: 13px;
-    font-family: Source Code Pro;
     color: #CCCCCC;
 }
 
@@ -363,7 +214,6 @@ input:invalid {
 .message {
     width: 290px;
     font-size: 14px;
-    font-family: Source Code Pro;
     color: #333333;
     border-radius: 5px;
     padding-top: 10px;
@@ -389,7 +239,6 @@ input:invalid {
 .grid-item {
     padding: 25px;
     font-size: 13px;
-    font-family: Source Code Pro;
     text-align: center;
 }
 
