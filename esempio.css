@@ -146,9 +146,8 @@ body {
     font-weight: normal;
 }
 
-.flex2 {
+.flex-second {
     flex-direction: column;
-    padding-left: 20px;
     padding-right: 297px;
 }
 
@@ -156,7 +155,7 @@ body {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
 
-.flex3 {
+.flex-tird {
     display: flex;
     align-items: center;
 }
@@ -186,7 +185,9 @@ body {
 }
 
 .link-comp {
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Source Code Pro;
     color: #FFFFFF;
 }
 
@@ -396,6 +397,13 @@ input:invalid {
     padding: 35px;
     font-size: 18px;
     color: #FFFFFF;
+}
+
+.first-row-left {
+    text-align: left;
+}
+
+.fisrt-row-center {
     text-align: center;
 }
 
@@ -452,4 +460,3 @@ input:invalid {
 .nome-grid {
     padding-left: 15px;
 }
-
