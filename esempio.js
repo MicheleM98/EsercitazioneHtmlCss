@@ -14,23 +14,23 @@ function controlloForm() {
     const email = $('#email');
     const phoneValue = phone.val();
     const emailValue = email.val();
-    const lblPhoneError = $('#phoneError');
-    const lblMailError = $('#mailError');
+    const labelPhoneError = $('#phoneError');
+    const labelMailError = $('#mailError');
 
     if (isNaN(phoneValue) || phoneValue.length < 1) {
         phone.css('border-color', '#FF0000');
-        lblPhoneError.attr('title', 'TELEFONO NON VALIDO');
+        labelPhoneError.attr('title', 'TELEFONO NON VALIDO');
     } else {
         phone.css('border-color', '#ADADAD');
-        lblPhoneError.attr('title', '');
+        labelPhoneError.attr('title', '');
     }
 
     if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1) {
         email.css('border-color', '#FF0000');
-        lblMailError.attr('title', 'MAIL NON VALIDA');
+        labelMailError.attr('title', 'MAIL NON VALIDA');
     } else {
         email.css('border-color', '#ADADAD');
-        lblMailError.attr('title', '');
+        labelMailError.attr('title', '');
     }
 }
 
@@ -41,17 +41,17 @@ function inviaMessaggio() {
     if(text !== '') {
         const div = $('<div></div>');
         const p = $('<p></p>').addClass('sent-message message box-message right font-normal').text(text);
-        const lbl = $('<p></p>').addClass(' triangle triangle-down');
+        const trinagle = $('<p></p>').addClass(' triangle triangle-down');
         div.append(p);
-        div.append(lbl);
+        div.append(trinagle);
         chat.append(div);
         textArea.val('');
 
         setTimeout(() => {
             const divResponse = $('<div></div>');
-            const lblResponse = $('<p></p>').addClass('triangle triangle-up');
+            const trinagleResponse = $('<p></p>').addClass('triangle triangle-up');
             const pResponse = $('<p></p>').addClass('receved-message message box-message left font-normal').text('Miiinchia!');
-            divResponse.append(lblResponse);
+            divResponse.append(trinagleResponse);
             divResponse.append(pResponse);
             chat.append(divResponse);
         }, 2000);
