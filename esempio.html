@@ -3,7 +3,6 @@
 <head>
     <title>Esempio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="esempio.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,31 +10,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
 </head>
 <body>
-    <div class="flex-second green-background">
-        <div class="box-components top">
+    <div class="lateral-menu green-background">
+        <div class="lateal-menu-elements top">
             <h1 class="component">Componenti</h1><br><br>
-            <a class="link-comp font-normal" href="#contatto">Modulo di contatto</a>
+            <a class="link-title" href="#contatto">Modulo di contatto</a>
             <br><br>
-            <a class="link-comp font-normal" href="#chat">Chat</a>
+            <a class="link-title" href="#chat">Chat</a>
             <br><br>
-            <a class="link-comp font-normal" href="#stylish">Stylish Table</a>
+            <a class="link-title" href="#stylish">Stylish Table</a>
         </div>
-        <div class="box-components bottom">
+        <div class="lateal-menu-elements bottom">
             <p class="text-comp">&lt;/&gt; by Pasquale</p>
         </div>
     </div>
     <div>
-        <h1 id="contatto" class="title font-normal"># Modulo di contatto</h1>
+        <h1 id="contatto" class="title"># Modulo di contatto</h1>
         <div class="group">
-            <p class="first-par font-normal">Ciao!</p><br>
+            <p class="first-par">Ciao!</p><br>
             <form id="form" action="#">
-                <p class="first-par font-normal">
+                <p class="first-par">
                     Mi chiamo <input class="text-box" type="text" placeholder="Nome e Cognome" /> e al momento
                     <input class="text-box" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja Campus
                     perchè
@@ -48,11 +48,11 @@
                     <br>Grazie.
                 </p><br>
                 <div>
-                    <button type="submit" class="button big-button font-normal">INVIA MESSAGGIO ></button>
+                    <button type="submit" class="button big-button">INVIA MESSAGGIO ></button>
                 </div>
             </form>
         </div>
-        <h1 id="chat" class="title font-normal"># Chat</h1>
+        <h1 id="chat" class="title"># Chat</h1>
         <div class="group">
             <div class="group2">
                 <div class="flex-tird">
@@ -60,41 +60,41 @@
                         <img src="img/chat.png" alt="Aldo Baglio">
                     </div>
                     <div class="flex-second">
-                        <label class="user font-normal">Aldo Baglio</label>
+                        <label class="user">Aldo Baglio</label>
                         <br>
-                        <label class="last-seen font-normal">Ultimo accesso: 3 ore fa</label>
+                        <label class="last-seen">Ultimo accesso: 3 ore fa</label>
                     </div>
                 </div>
                 <div id="chatBox">
                     <div>
                         <br>
                         <p class="triangle triangle-up"></p>
-                        <p class="receved-message message box-message left font-normal">Ciao, come posso aiutarti?</p>
+                        <p class="receved-message message box-message left">Ciao, come posso aiutarti?</p>
                     </div>
                 </div>
             </div>
             <div class="gray-background">
-                <div class="grid-container2">
+                <div>
                     <div class="font-normal" style="flex-grow: 1;">
                         <textarea id="textMessage" class="text-area text-message" style="width: 96%;" placeholder="Scrivi un messaggio..."></textarea>
                     </div>
                     <div class="font-normal2">
-                        <button onclick="sendMessage()" class="button mini-button sky-blue-background font-normal">Invia Messaggio ></button>
+                        <button onclick="sendMessage()" class="button mini-button sky-blue-background">Invia Messaggio ></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="flex-tird">
-            <h1 id="stylish" class="title font-normal"># Stylish table</h1>
+            <h1 id="stylish" class="title"># Stylish table</h1>
             <div class="button-container">
-                <button onclick="gridReload()" class="button big-button font-normal">Ricarica Dati</button>
+                <button onclick="gridReload()" class="button big-button">Ricarica Dati</button>
             </div>
         </div>
         <div id="grid" class="grid-container">
-            <div class="grid-item font-normal first-row">Cliente</div>
-            <div class="grid-item font-normal first-row">Email</div>
-            <div class="grid-item font-normal first-row">Telefono</div>
-            <div class="grid-item font-normal first-row">Azioni</div>
+            <div class="grid-item first-row">Cliente</div>
+            <div class="grid-item first-row">Email</div>
+            <div class="grid-item first-row">Telefono</div>
+            <div class="grid-item first-row">Azioni</div>
         </div>
     </div>
 </body>
