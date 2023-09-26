@@ -1,11 +1,14 @@
 body {
-    display: flex;
     font-family: Source Code Pro;
 }
 
 .lateral-menu {
     flex-direction: column;
-    padding-right: 300px;
+    width: var(--menu-width);
+    height: 100vh;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
 }
 
 .green-background {
@@ -15,6 +18,7 @@ body {
 .chat-user {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .grid-user {
@@ -28,12 +32,14 @@ body {
 }
 
 .lateral-menu-elements {
-    position: fixed;
     padding-left: 30px;
 }
 
 .lateral-top {
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .lateral-bottom {
@@ -41,18 +47,11 @@ body {
     bottom: 0;
 }
 
-.lateral-center {
-    padding-top: 80px;
-}
-
 .lateral-title {
     font-weight: bold;
     font-size: 30px;
     color: #FFFFFF;
-}
-
-.lateral-link {
-    padding-top: 15px;
+    margin-bottom: 20px;
 }
 
 .link-title {
@@ -327,9 +326,13 @@ form textarea{
 }
 
 main {
-    padding-left: 80px;
+    padding-left: calc(80px + var(--menu-width));
 }
 
 section {
     padding-bottom: 50px;
+}
+
+:root {
+    --menu-width: 300px;
 }
