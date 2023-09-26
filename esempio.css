@@ -69,7 +69,7 @@ body {
 .title {
     color: #FFFFFF;
     padding-bottom: 50px;
-    padding-top: 70px;
+    padding-top: 55px;
     font-size: 40px;
     font-weight: 300;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -95,7 +95,6 @@ form p {
 
 textarea,
 input {
-    margin-top: 10px;
     outline: none;
 }
 
@@ -150,15 +149,16 @@ form textarea{
 }
 
 .mini-button {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 10px;
-    padding-right: 15px;
+    padding-right: 10px;
     font-size: 14px;
     text-align: center;
     justify-content: center;
     display: block;
     border-radius: 0 5px 5px 0;
+    white-space: nowrap;
 }
 
 .text-message {
@@ -260,7 +260,6 @@ form textarea{
     grid-template-columns: 70% 30%;
     padding: 10px;
     display: flex;
-    width: 859px;
 }
 
 .grid-link {
@@ -327,6 +326,7 @@ form textarea{
 
 main {
     padding-left: calc(80px + var(--menu-width));
+    max-width: 50%;
 }
 
 section {
