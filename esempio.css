@@ -31,19 +31,19 @@ body {
     position: fixed;
 }
 
-.top {
+.lateral-top {
     padding-left: 30px;
     padding-top: 40px;
     top: 0;
 }
 
-.bottom {
+.lateral-bottom {
     padding-left: 30px;
     padding-bottom: 30px;
     bottom: 0;
 }
 
-.component {
+.lateral-title {
     font-weight: bold;
     font-size: 30px;
     color: #FFFFFF;
@@ -56,7 +56,7 @@ body {
     color: #FFFFFF;
 }
 
-.text-comp {
+.lateral-text {
     font-weight: bold;
     font-size: 13px;
     color: #FFFFFF;
@@ -72,7 +72,12 @@ body {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.group {
+form {
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.chatBox {
     padding-bottom: 50px;
     padding-left: 80px;
 }
@@ -180,7 +185,7 @@ input:invalid {
     background: #E6F7FF 0% 0% no-repeat padding-box;
 }
 
-.group2 {
+.chat {
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #B6BDC1;
