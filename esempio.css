@@ -3,21 +3,31 @@ body {
     font-family: Source Code Pro;
 }
 
-.flex-second {
+.lateral-menu {
     flex-direction: column;
-    padding-right: 297px;
+    padding-right: 300px;
 }
 
 .green-background {
     background: #90CCAC 0% 0% no-repeat padding-box;
 }
 
-.flex-third {
+.chat-user {
     display: flex;
     align-items: center;
 }
 
-.box-components {
+.grid-user {
+    display: flex;
+    align-items: center;
+}
+
+.grid-title {
+    display: flex;
+    align-items: center;
+}
+
+.lateal-menu-elements {
     position: fixed;
 }
 
