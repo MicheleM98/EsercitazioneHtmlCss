@@ -138,7 +138,6 @@ body {
 
 body {
     display: flex;
-    font-variant: normal;
 }
 
 .flex-second {
@@ -172,7 +171,6 @@ body {
 }
 
 .component {
-    font-style: normal;
     font-weight: bold;
     font-size: 30px;
     font-family: Source Code Pro;
@@ -188,7 +186,6 @@ body {
 }
 
 .text-comp {
-    font-style: normal;
     font-weight: bold;
     font-size: 13px;
     font-family: Source Code Pro;
@@ -265,7 +262,6 @@ input:invalid {
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
-    font-weight: normal;
     font-size: 20px;
     font-family: Source Code Pro;
 }
