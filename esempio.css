@@ -179,6 +179,7 @@ form textarea{
     line-height: 45px;
     padding-left: 25px;
     font-size: 13px;
+    width: 96%;
 }
 
 .sky-blue-background {
@@ -316,4 +317,15 @@ form textarea{
 
 .nome-grid {
     padding-left: 15px;
+}
+
+.gift {
+    margin-top: 7px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+}
+
+.gift-link {
+    padding-left: 25%;
 }
