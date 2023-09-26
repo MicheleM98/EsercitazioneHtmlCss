@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#form').submit(function (event) {
         event.preventDefault();
-        controlloForm();
+        formValidator();
     });
 
     $('#textMessage').on('input', function () {
@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 });
 
-function controlloForm() {
+function formValidator() {
     const phone = $('#phone');
     const email = $('#email');
     const phoneValue = phone.val();
@@ -34,7 +34,7 @@ function controlloForm() {
     }
 }
 
-function inviaMessaggio() {
+function sendMessage() {
     const chat = $('#chatBox');
     const textArea = $('#textMessage');
     let text = textArea.val();
@@ -58,7 +58,7 @@ function inviaMessaggio() {
     }
 }
 
-async function caricaDati() {
+async function gridReload() {
     const grid = $('#grid');
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await response.json();
@@ -80,12 +80,12 @@ async function caricaDati() {
         const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item font-normal grid-center');
         const button = $('<button></button>').addClass('grid-link').text('Cancella');
         divButton.append(button);
-        button.click(() => cancellaRecord(element.id));
+        button.click(() => removeRecord(element.id));
 
         grid.append(divButton);
     });
 }
 
-function cancellaRecord(id) {
+function removeRecord(id) {
     $(`.grid-center[data-id="${id}"]`).remove();
 }
