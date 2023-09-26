@@ -29,16 +29,15 @@ body {
 
 .lateal-menu-elements {
     position: fixed;
+    padding-left: 30px;
 }
 
 .lateral-top {
-    padding-left: 30px;
     padding-top: 40px;
     top: 0;
 }
 
 .lateral-bottom {
-    padding-left: 30px;
     padding-bottom: 30px;
     bottom: 0;
 }
@@ -66,20 +65,9 @@ body {
     color: #FFFFFF;
     padding-bottom: 55px;
     padding-top: 60px;
-    padding-left: 80px;
     font-size: 40px;
     font-weight: 300;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-form {
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
-
-.chatBox {
-    padding-bottom: 50px;
-    padding-left: 80px;
 }
 
 form p {
@@ -233,7 +221,6 @@ form textarea{
 }
 
 .grid-container {
-    padding-left: 80px;
     padding-bottom: 150px;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -310,14 +297,14 @@ form textarea{
     position: relative;
 }
 
-.nome-grid {
+.name-grid {
     padding-left: 15px;
 }
 
 .gift {
-    margin-top: 7px;
-    padding-top: 19px;
-    padding-bottom: 17px;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     padding-left: 20px;
     font-size: 14px;
     color: #333333;
@@ -327,4 +314,12 @@ form textarea{
     padding-left: 25%;
     font-size: 14px;
     color: #333333;
+}
+
+main {
+    padding-left: 80px;
+}
+
+section {
+    padding-bottom: 50px;
 }
