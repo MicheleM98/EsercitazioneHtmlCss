@@ -3,24 +3,24 @@
 <head>
     <title>Esempio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
 </head>
 <body>
     <div class="flex-second green-background">
         <div class="box-components top">
             <h1 class="component">Componenti</h1><br><br>
-            <a class="link-comp" href="#contatto">Modulo di contatto</a>
+            <a class="link-title" href="#contatto">Modulo di contatto</a>
             <br><br>
-            <a class="link-comp" href="#chat">Chat</a>
+            <a class="link-title" href="#chat">Chat</a>
             <br><br>
-            <a class="link-comp" href="#stylish">Stylish Table</a>
+            <a class="link-title" href="#stylish">Stylish Table</a>
         </div>
         <div class="box-components bottom">
             <p class="text-comp">&lt;/&gt; by Pasquale</p>
@@ -37,7 +37,7 @@
             <br>Il mio numero è <label class="text-error" title="TELEFONO NON VALIDO"><input class="text-box" type="text" placeholder="Contatto telefonico" required pattern="[0-9]{1,10}"/></label>
             <br>o potete contattarmi sull'indirizzo email <label class="text-error" title="MAIL NON VALIDA"><input class="text-box" type="text"
                     placeholder="Contatto email" required pattern="[.-z]{1,15}"/></label>.<br>
-            <textarea cols="66" rows="3" class="text-area text-area1" placeholder="Domande e dettagli"></textarea>.
+            <textarea cols="66" rows="3" class="text-area text-area-first" placeholder="Domande e dettagli"></textarea>.
             <br>Grazie.</p><br>
             <div>
                 <a href="#" class="button big-button">INVIA MESSAGGIO ></a>
@@ -46,7 +46,7 @@
         <h1 id="chat" class="title"># Chat</h1>
         <div class="group">
             <div class="group2">
-                <div class="flex-tird">
+                <div class="flex-third">
                     <div>
                         <img src="img/chat.png" alt="Aldo Baglio">
                     </div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-tird">
+        <div class="flex-third">
             <h1 id="stylish" class="title"># Stylish table</h1>
             <div class="button-container">
                 <a href="#" class="button big-button">Ricarica Dati</a>
@@ -98,7 +98,7 @@
             <div class="grid-item first-row fisrt-row-center">Età</div>
             <div class="grid-item first-row first-row-left" style="padding-left: 55px">Posizione</div>
             <div class="grid-item first-row fisrt-row-center">Azioni</div>
-            <div class="grid-item flex-tird">
+            <div class="grid-item flex-third">
                 <div>
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
@@ -111,7 +111,7 @@
             <div class="grid-item grid-center">
                 <a href="#" class="grid-link">Cancella</a>
             </div>
-            <div class="grid-item flex-tird">
+            <div class="grid-item flex-third">
                 <div>
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
@@ -124,7 +124,7 @@
             <div class="grid-item grid-center">
                 <a href="#" class="grid-link">Cancella</a>
             </div>
-            <div class="grid-item flex-tird">
+            <div class="grid-item flex-third">
                 <div>
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
@@ -137,7 +137,7 @@
             <div class="grid-item grid-center">
                 <a href="#" class="grid-link">Cancella</a>
             </div>
-            <div class="grid-item flex-tird">
+            <div class="grid-item flex-third">
                 <div>
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
@@ -150,7 +150,7 @@
             <div class="grid-item grid-center">
                 <a href="#" class="grid-link">Cancella</a>
             </div>
-            <div class="grid-item flex-tird">
+            <div class="grid-item flex-third">
                 <div>
                     <img src="img/grid.png" alt="Aldo Baglio">
                 </div>
