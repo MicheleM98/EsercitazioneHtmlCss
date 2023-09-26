@@ -193,6 +193,7 @@ form textarea{
     padding-left: 40px;
     padding-bottom: 76px;
     padding-top: 46px;
+    padding-right: 40px;
 }
 
 .user {
@@ -216,7 +217,7 @@ form textarea{
 }
 
 .right {
-    right: -497px;
+    margin-left: auto;
 }
 
 .message {
