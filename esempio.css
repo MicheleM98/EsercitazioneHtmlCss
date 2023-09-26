@@ -141,11 +141,6 @@ body {
     font-variant: normal;
 }
 
-.font-normal {
-    font-style: normal;
-    font-weight: normal;
-}
-
 .flex-second {
     flex-direction: column;
     padding-right: 297px;
