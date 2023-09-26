@@ -82,7 +82,7 @@ form {
     padding-left: 80px;
 }
 
-.first-par {
+form p {
     font-size: 22px;
     color: #ADADAD;
     padding-bottom: 36px;
@@ -129,7 +129,7 @@ input:invalid {
     color: #ADADAD;
 }
 
-.text-area-first {
+form textarea{
     background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
         repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
     font-style: italic;
@@ -197,11 +197,13 @@ input:invalid {
 .user {
     font-size: 22px;
     color: #333333;
+    padding-left: 15px;
 }
 
 .last-seen {
     font-size: 13px;
     color: #CCCCCC;
+    padding-left: 15px;
 }
 
 .box-message {
