@@ -4,8 +4,8 @@ $(document).ready(function () {
         formValidator();
     });
     
-    $('#textMessage').on('input', function () {
-        $('#textMessage').css('border-color', '#ADADAD');
+    $('#text-message').on('input', function () {
+        $('#text-message').css('border-color', '#ADADAD');
     });
 });
 
@@ -14,8 +14,8 @@ function formValidator() {
     const email = $('#email');
     const phoneValue = phone.val();
     const emailValue = email.val();
-    const labelPhoneError = $('#phoneError');
-    const labelMailError = $('#mailError');
+    const labelPhoneError = $('#phone-error');
+    const labelMailError = $('#mail-error');
 
     if (isNaN(phoneValue) || phoneValue.length < 1) {
         phone.css('border-color', '#FF0000');
@@ -35,8 +35,8 @@ function formValidator() {
 }
 
 function sendMessage() {
-    const chat = $('#chatBox');
-    const textArea = $('#textMessage');
+    const chat = $('#chat-box');
+    const textArea = $('#text-message');
     let text = textArea.val();
     if(text !== '') {
         const p = $('<p></p>').addClass('sent-message right-message').text(text);
