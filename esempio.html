@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='esempio.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="esempio.js"></script>
 </head>
 <body>
     <div class="lateral-menu green-background">
@@ -24,22 +26,24 @@
             <div class="title">
                 <h1 id="contatto"># Modulo di contatto</h1>
             </div>
-            <form>
-                <p>Ciao!</p>
+            <p>Ciao!</p>
+            <form id="form" acrion="#">
                 <p>
                     Mi chiamo <input class="text-box" type="text" placeholder="Nome e Cognome" /> e al momento
                     <input class="text-box" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja
                     Campus perchè
                     <br><textarea cols="66" rows="3" class="text-area text-area-first"
                         placeholder="Introduzione personale"></textarea>.
-                    <br>Il mio numero è <label class="text-error" title="TELEFONO NON VALIDO"><input id="phone" class="text-box" type="text"
+                    <br>Il mio numero è <label id="phoneError" class="text-error" title="TELEFONO NON VALIDO"><input id="phone" class="text-box" type="text"
                             placeholder="Contatto telefonico" /></label>
-                    <br>o potete contattarmi sull'indirizzo email <label class="text-error" title="MAIL NON VALIDA"><input id="email"
+                    <br>o potete contattarmi sull'indirizzo email <label id="mailError" class="text-error" title="MAIL NON VALIDA"><input id="email"
                             class="text-box" type="text" placeholder="Contatto email" /></label>.<br>
                     <textarea cols="66" rows="3" class="text-area text-area-first" placeholder="Domande e dettagli"></textarea>.
                     <br>Grazie.
                 </p>
-                <a href="#" class="button big-button">INVIA MESSAGGIO ></a>
+                <div>
+                    <button type="submit" class="button big-button">INVIA MESSAGGIO ></button>
+                </div>
             </form>
         </section>
         <section>
@@ -54,33 +58,35 @@
                         <p class="last-seen">Ultimo accesso: 3 ore fa</p>
                     </div>
                 </div>
-                <p class="triangle triangle-up"></p>
-                <p class="receved-message left-message">Ciao, come posso aiutarti?</p>
-                <p class="sent-message right-message">Vorrei un etto di prosciutto</p>
-                <p class="triangle triangle-down"></p>
-                <p class="triangle triangle-up"></p>
-                <p class="receved-message left-message">Ecco a te!</p>
-                <div class="sent-message gift">
-                    <p class="gift-label">Nuovo regalo! <img src="img/1f99a.gif" alt="pavone" style="width: 5%; height: 5%;"></p>
-                    <a href="#" class="gift-link">ACCETTA DONO</a>
+                <div id="chatBox">
+                    <p class="triangle triangle-up"></p>
+                    <p class="received-message left-message">Ciao, come posso aiutarti?</p>
+                    <p class="sent-message right-message">Vorrei un etto di prosciutto</p>
+                    <p class="triangle triangle-down"></p>
+                    <p class="triangle triangle-up"></p>
+                    <p class="received-message left-message">Ecco a te!</p>
+                    <div class="sent-message gift">
+                        <p class="gift-label">Nuovo regalo! <img src="img/1f99a.gif" alt="pavone" style="width: 5%; height: 5%;"></p>
+                        <a href="#" class="gift-link">ACCETTA DONO</a>
+                    </div>
                 </div>
             </div>
             <div class="gray-background grid-container2">
-                <textarea class="text-area text-message" placeholder="Scrivi un messaggio..."></textarea>
-                <a href="#" class="button mini-button sky-blue-background">Invia Messaggio ></a>
+                <textarea id="textMessage" class="text-area text-message" placeholder="Scrivi un messaggio..."></textarea>
+                <button onclick="sendMessage()" class="button mini-button sky-blue-background">Invia Messaggio ></button>
             </div>
         </section>
         <section>
             <div class="grid-title">
                 <h1 id="stylish" class="title"># Stylish table</h1>
                 <div class="button-container">
-                    <a href="#" class="button big-button">Ricarica Dati</a>
+                    <button onclick="gridReload()" class="button big-button">Ricarica Dati</button>
                 </div>
             </div>
-            <div class="grid-container">
+            <div id="grid" class="grid-container">
                 <div class="grid-item first-row first-row-left">Cliente</div>
-                <div class="grid-item first-row fisrt-row-center">Età</div>
-                <div class="grid-item first-row first-row-center">Posizione</div>
+                <div class="grid-item first-row fisrt-row-center">Email</div>
+                <div class="grid-item first-row first-row-center">Telefono</div>
                 <div class="grid-item first-row fisrt-row-center">Azioni</div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">

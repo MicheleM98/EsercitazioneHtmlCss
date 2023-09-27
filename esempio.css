@@ -1,4 +1,4 @@
-body, input {
+body, input, button, textarea {
     font-family: Source Code Pro;
 }
 
@@ -208,7 +208,7 @@ form textarea{
     padding: 10px;
 }
 
-.receved-message {
+.received-message {
     background: #E6F7FF;
 }
 

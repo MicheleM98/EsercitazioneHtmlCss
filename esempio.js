@@ -39,21 +39,17 @@ function sendMessage() {
     const textArea = $('#textMessage');
     let text = textArea.val();
     if(text !== '') {
-        const div = $('<div></div>');
-        const p = $('<p></p>').addClass('sent-message message box-message right font-normal').text(text);
-        const trinagle = $('<p></p>').addClass(' triangle triangle-down');
-        div.append(p);
-        div.append(trinagle);
-        chat.append(div);
+        const p = $('<p></p>').addClass('sent-message right-message').text(text);
+        const trinagle = $('<p></p>').addClass('triangle triangle-down');
+        chat.append(p);
+        chat.append(trinagle);
         textArea.val('');
 
         setTimeout(() => {
-            const divResponse = $('<div></div>');
             const trinagleResponse = $('<p></p>').addClass('triangle triangle-up');
-            const pResponse = $('<p></p>').addClass('receved-message message box-message left font-normal').text('Miiinchia!');
-            divResponse.append(trinagleResponse);
-            divResponse.append(pResponse);
-            chat.append(divResponse);
+            const pResponse = $('<p></p>').addClass('received-message left-message').text('Miiinchia!');
+            chat.append(trinagleResponse);
+            chat.append(pResponse);
         }, 2000);
     }
 }
