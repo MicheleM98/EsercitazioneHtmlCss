@@ -1,4 +1,4 @@
-body {
+body, input {
     font-family: Source Code Pro;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 .green-background {
-    background: #90CCAC 0% 0% no-repeat padding-box;
+    background: #90CCAC;
 }
 
 .chat-user {
@@ -128,12 +128,12 @@ form textarea{
 }
 
 .gray-background {
-    background: #F4F6F7 0% 0% no-repeat padding-box;
+    background: #F4F6F7;
 }
 
 .button {
     border: none;
-    background: #EAEAEA 0% 0% no-repeat;
+    background: #EAEAEA;
     text-align: left;
     letter-spacing: 0px;
     color: #333333;
@@ -141,18 +141,12 @@ form textarea{
 }
 
 .big-button {
-    padding-left: 27px;
-    padding-right: 34px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 30px;
     font-size: 22px;
 }
 
 .mini-button {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 10px;
     font-size: 14px;
     text-align: center;
     justify-content: center;
@@ -171,17 +165,14 @@ form textarea{
 }
 
 .sky-blue-background {
-    background: #E6F7FF 0% 0% no-repeat padding-box;
+    background: #E6F7FF;
 }
 
 .chat {
     position: relative;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     border: 1px solid #B6BDC1;
-    padding-left: 40px;
-    padding-bottom: 70px;
-    padding-top: 50px;
-    padding-right: 40px;
+    padding: 50px 70px 40px;
 }
 
 .user {
@@ -191,6 +182,7 @@ form textarea{
 }
 
 .last-seen {
+    margin-top: 10px;
     font-size: 13px;
     color: #CCCCCC;
     padding-left: 15px;
@@ -203,9 +195,7 @@ form textarea{
     font-size: 14px;
     color: #333333;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 18px;
+    padding: 10px;
 }
 
 .right-message {
@@ -215,17 +205,15 @@ form textarea{
     font-size: 14px;
     color: #333333;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 18px;
+    padding: 10px;
 }
 
 .receved-message {
-    background: #E6F7FF 0% 0% no-repeat padding-box;
+    background: #E6F7FF;
 }
 
 .sent-message {
-    background: #F4F6F7 0% 0% no-repeat padding-box;
+    background: #F4F6F7;
 }
 
 .grid-container {
@@ -241,7 +229,7 @@ form textarea{
 }
 
 .first-row {
-    background: #AEBED8 0% 0% no-repeat padding-box;
+    background: #AEBED8;
     padding: 35px;
     font-size: 18px;
     color: #FFFFFF;
@@ -287,7 +275,7 @@ form textarea{
 
 .triangle-down {
     border-top: 10px solid #F4F6F7;
-    margin-left: 765px;
+    margin-left: 775px;
 }
 
 .text-error::after {
@@ -311,9 +299,7 @@ form textarea{
 .gift {
     max-width: 290px;
     margin-top: 5px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    padding: 10px;
     font-size: 14px;
     color: #333333;
 }
