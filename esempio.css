@@ -319,9 +319,13 @@ form textarea{
 }
 
 .gift-link {
-    padding-left: 50px;
+    padding-left: 70px;
     font-size: 14px;
     color: #333333;
+}
+
+.gift-label {
+    margin-bottom: 15px;
 }
 
 main {
