@@ -97,9 +97,10 @@ div {
     font-size: 20px;
     border: none;
     color: #ADADAD;
-    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 6px),
-                repeating-linear-gradient(to bottom, transparent 0 22px, #ADADAD 0 24px);
-
+    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),
+                repeating-linear-gradient(to bottom, transparent 0 34px, #ADADAD 0 36px);
+    padding-left: 5px;
+    line-height: 34px;
 }
 
 textarea,
@@ -122,12 +123,13 @@ textarea::placeholder {
 }
 
 form textarea{
-    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 6px),
-                repeating-linear-gradient(to bottom, transparent 0 24px, #ADADAD 0 26px);
+    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),
+                repeating-linear-gradient(to bottom, transparent 0 34px, #ADADAD 0 36px);
     font-style: italic;
     font-size: 20px;
-    margin-top: 15px;
-    line-height: 10px;
+    line-height: 34px;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 
 .button-container {

@@ -16,18 +16,18 @@ function validateForm() {
     console.log(phoneValue);
     if (isNaN(phoneValue) || phoneValue.length < 1) {
         console.log('si');
-        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
+        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 34px, #FF0000 0 36px)');
         phoneError.attr('title', 'TELEFONO NON VALIDO');
     } else {
-        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
+        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 34px, #ADADAD 0 36px)');
         phoneError.attr('title', '');
     }
 
     if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1) {
-        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
+        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 34px, #FF0000 0 36px)');
         mailError.attr('title', 'MAIL NON VALIDA');
     } else {
-        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
+        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 24px, #ADADAD 0 36px)');
         mailError.attr('title', '');
     }
 }
