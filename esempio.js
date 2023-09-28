@@ -10,23 +10,23 @@ function validateForm() {
     const email = $('#email');
     const phoneValue = phone.val();
     const emailValue = email.val();
-    const phoneError = $('#phone-error');
-    const mailError = $('#mail-error');
 
+    console.log(phoneValue);
     if (isNaN(phoneValue) || phoneValue.length < 1) {
-        phone.css('border-color', '#FF0000');
-        phoneError.attr('title', 'TELEFONO NON VALIDO');
+        console.log('si');
+        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
+        phone.attr('title', 'TELEFONO NON VALIDO');
     } else {
-        phone.css('border-color', '#ADADAD');
-        phoneError.attr('title', '');
+        phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
+        phone.attr('title', '');
     }
 
     if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1) {
-        email.css('border-color', '#FF0000');
-        mailError.attr('title', 'MAIL NON VALIDA');
+        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
+        email.attr('title', 'MAIL NON VALIDA');
     } else {
-        email.css('border-color', '#ADADAD');
-        mailError.attr('title', '');
+        email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
+        email.attr('title', '');
     }
 }
 
@@ -35,17 +35,17 @@ function messageSend() {
     const textArea = $('#text-message');
     let text = textArea.val();
     if(text !== '') {
-        const div = $('<div ></div> ').addClass('sent-message right-message').text(text);
-        const trinagle = $('<div></div>').addClass('triangle triangle-down');
-        div.append(trinagle);
+        const div = $('<div ></div> ').addClass('sent-message message').text(text);
+        const triangle = $('<div></div>').addClass('triangle triangle-down');
         chat.append(div);
+        chat.append(triangle);
         textArea.val('');
 
         setTimeout(() => {
-            const trinagleResponse = $('<div></div>').addClass('triangle triangle-up');
-            const divResponse = $('<div></div>').addClass('received-message left-message').text('Miiinchia!');
-            trinagleResponse.append(divResponse);
-            chat.append(trinagleResponse);
+            const triangleResponse = $('<div></div>').addClass('triangle triangle-up');
+            const divResponse = $('<div></div>').addClass('received-message message').text('Miiinchia!');
+            chat.append(triangleResponse);
+            chat.append(divResponse);
         }, 2000);
     }
 }

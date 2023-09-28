@@ -75,10 +75,10 @@ body, input, button, textarea {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-form div {
+form div, form span {
     font-size: 22px;
     color: #ADADAD;
-    padding-bottom: 10px;
+    padding: 10px 0px;
 }
 
 form {
@@ -95,11 +95,11 @@ div {
     font-style: italic;
     font-weight: 300;
     font-size: 20px;
-    border-bottom: dashed 1.5px #ADADAD;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     color: #ADADAD;
+    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 6px),
+                repeating-linear-gradient(to bottom, transparent 0 22px, #ADADAD 0 24px);
+
 }
 
 textarea,
@@ -115,10 +115,6 @@ textarea::placeholder {
     color: #ADADAD;
 }
 
-input:invalid {
-    border-color: red;
-}
-
 .text-area {
     border: none;
     resize: none;
@@ -126,8 +122,8 @@ input:invalid {
 }
 
 form textarea{
-    background: repeating-linear-gradient(to right, transparent 0 5px, #FFFFFF 0 6px),
-        repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 1px), #ADADAD 0 1.5em);
+    background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 6px),
+                repeating-linear-gradient(to bottom, transparent 0 22px, #ADADAD 0 24px);
     font-style: italic;
     font-size: 20px;
 }
@@ -222,7 +218,7 @@ form textarea{
 
 .grid-item {
     padding: 25px;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     color: #333333;
 }
@@ -270,11 +266,13 @@ form textarea{
 
 .triangle-up {
     border-bottom: 10px solid #E6F7FF;
+    margin-left: 10px;
 }
 
 .triangle-down {
     border-top: 10px solid #F4F6F7;
     margin-left: auto;
+    margin-right: 10px;
 }
 
 .text-error::after {
@@ -282,13 +280,13 @@ form textarea{
     display: block;
     position: absolute;
     content: attr(title);
-    top: -20px;
+    top: -5px;
     left: 0;
     font-size: x-small;
 }
 
 .text-error {
-    position: relative;
+    position: absolute;
 }
 
 .name-grid {
