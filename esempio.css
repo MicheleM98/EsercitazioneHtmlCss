@@ -208,6 +208,7 @@ form textarea{
 .sent-message {
     background: #F4F6F7;
     margin-left: auto;
+    margin-top: 10px;
 }
 
 .grid-container {
@@ -280,15 +281,10 @@ form textarea{
 .text-error::after {
     color: #FF0000;
     display: block;
-    position: absolute;
     content: attr(title);
     top: -5px;
     left: 0;
     font-size: x-small;
-}
-
-.text-error {
-    position: absolute;
 }
 
 .name-grid {

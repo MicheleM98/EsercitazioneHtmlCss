@@ -10,23 +10,25 @@ function validateForm() {
     const email = $('#email');
     const phoneValue = phone.val();
     const emailValue = email.val();
+    const phoneError = $('#phone-error');
+    const mailError = $('#mail-error');
 
     console.log(phoneValue);
     if (isNaN(phoneValue) || phoneValue.length < 1) {
         console.log('si');
         phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
-        phone.attr('title', 'TELEFONO NON VALIDO');
+        phoneError.attr('title', 'TELEFONO NON VALIDO');
     } else {
         phone.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
-        phone.attr('title', '');
+        phoneError.attr('title', '');
     }
 
     if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1) {
         email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #FF0000 0 25px)');
-        email.attr('title', 'MAIL NON VALIDA');
+        mailError.attr('title', 'MAIL NON VALIDA');
     } else {
         email.css('background', 'repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 7px),repeating-linear-gradient(to bottom, transparent 0 calc(24px - 1px), #ADADAD 0 25px)');
-        email.attr('title', '');
+        mailError.attr('title', '');
     }
 }
 
