@@ -78,7 +78,7 @@ body, input, button, textarea {
 form div, form span {
     font-size: 22px;
     color: #ADADAD;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .form-margin {
@@ -112,7 +112,7 @@ input::placeholder {
 }
 
 textarea::placeholder {
-    color: #ADADAD;
+    color: #AEAEAE;
 }
 
 .text-area {
@@ -123,9 +123,11 @@ textarea::placeholder {
 
 form textarea{
     background: repeating-linear-gradient(to right, transparent 0 4px, #FFFFFF 0 6px),
-                repeating-linear-gradient(to bottom, transparent 0 22px, #ADADAD 0 24px);
+                repeating-linear-gradient(to bottom, transparent 0 24px, #ADADAD 0 26px);
     font-style: italic;
     font-size: 20px;
+    margin-top: 15px;
+    line-height: 10px;
 }
 
 .button-container {
@@ -285,6 +287,12 @@ form textarea{
     color: #FF0000;
     content: attr(title);
     font-size: x-small;
+    position: absolute;
+    top: 5px;
+}
+
+.form-error {
+    position: relative;
 }
 
 .name-grid {
@@ -311,7 +319,7 @@ form textarea{
 
 main {
     padding-left: calc(80px + var(--menu-width));
-    max-width: 50%;
+    max-width: 65%;
 }
 
 section {
