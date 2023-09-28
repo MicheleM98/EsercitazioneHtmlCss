@@ -26,25 +26,28 @@
             <div class="title">
                 <h1 id="contatto"># Modulo di contatto</h1>
             </div>
-            <p>Ciao!</p>
+            <div>Ciao!</div>
             <form id="form" acrion="#">
-                <p>
-                    Mi chiamo <input class="text-box" type="text" placeholder="Nome e Cognome" /> e al momento
-                    <input class="text-box" type="text" placeholder="Occupazione" />. <br>Mi farebbe piacere partecipare a Ninja
-                    Campus perchè
-                    <br><textarea cols="66" rows="3" class="text-area text-area-first"
-                        placeholder="Introduzione personale"></textarea>.
-                    <br>Il mio numero è <label id="phone-error" class="text-error" title=""><input id="phone" class="text-box" type="text"
-                            placeholder="Contatto telefonico" /></label>
-                    <br>o potete contattarmi sull'indirizzo email <label id="mail-error" class="text-error" title=""><input id="email"
-                            class="text-box" type="text" placeholder="Contatto email" /></label>.<br>
-                    <textarea cols="66" rows="3" class="text-area text-area-first" placeholder="Domande e dettagli"></textarea>.
-                    <br>Grazie.
-                </p>
                 <div>
-                    <button type="submit" class="button big-button">INVIA MESSAGGIO ></button>
+                    Mi chiamo <input class="text-box" type="text" placeholder="Nome e Cognome" /> e al momento
+                    <input class="text-box" type="text" placeholder="Occupazione" />.
                 </div>
+                <div>Mi farebbe piacere partecipare a Ninja Campus perchè</div>
+                <textarea cols="66" rows="3" class="text-area text-area-first" placeholder="Introduzione personale"></textarea>.
+                <div>
+                    Il mio numero è <label id="phone-error" class="text-error" title="">
+                    <input id="phone" class="text-box" type="text" placeholder="Contatto telefonico" /></label>
+                </div>
+                <div>
+                    o potete contattarmi sull'indirizzo email <label id="mail-error" class="text-error" title="">
+                    <input id="email" class="text-box" type="text" placeholder="Contatto email" /></label>.
+                </div>
+                <textarea cols="66" rows="3" class="text-area text-area-first" placeholder="Domande e dettagli"></textarea>.
+                <div>Grazie.</div>
             </form>
+            <div>
+                <button type="submit" class="button big-button">INVIA MESSAGGIO ></button>
+            </div>
         </section>
         <section>
             <div class="title">
@@ -59,21 +62,21 @@
                     </div>
                 </div>
                 <div id="chat-box">
-                    <p class="triangle triangle-up"></p>
-                    <p class="received-message message">Ciao, come posso aiutarti?</p>
-                    <p class="sent-message message">Vorrei un etto di prosciutto</p>
-                    <p class="triangle triangle-down"></p>
-                    <p class="triangle triangle-up"></p>
-                    <p class="received-message message">Ecco a te!</p>
+                    <div class="triangle triangle-up"></div>
+                    <div class="received-message message">Ciao, come posso aiutarti?</div>
+                    <div class="sent-message message">Vorrei un etto di prosciutto</div>
+                    <div class="triangle triangle-down"></div>
+                    <div class="triangle triangle-up"></div>
+                    <div class="received-message message">Ecco a te!</div>
                     <div class="gray-background message gift">
-                        <p class="gift-label">Nuovo regalo! <img src="img/1f99a.gif" alt="pavone" style="width: 5%; height: 5%;"></p>
+                        <div class="gift-label message">Nuovo regalo! <img src="img/1f99a.gif" alt="pavone" style="width: 5%; height: 5%;"></div>
                         <a href="#" class="gift-link">ACCETTA DONO</a>
                     </div>
                 </div>
             </div>
             <div class="gray-background grid-message">
                 <textarea id="text-message" class="text-area text-message" placeholder="Scrivi un messaggio..."></textarea>
-                <button onclick="sendMessage()" class="button mini-button sky-blue-background">Invia Messaggio ></button>
+                <button onclick="messageSend()" class="button mini-button sky-blue-background">Invia Messaggio ></button>
             </div>
         </section>
         <section>
@@ -84,52 +87,52 @@
                 </div>
             </div>
             <div id="grid" class="grid-container">
-                <div class="grid-item first-row first-row-left">Cliente</div>
-                <div class="grid-item first-row fisrt-row-center">Email</div>
+                <div class="grid-item first-row first-row-center">Cliente</div>
+                <div class="grid-item first-row first-row-center">Email</div>
                 <div class="grid-item first-row first-row-center">Telefono</div>
-                <div class="grid-item first-row fisrt-row-center">Azioni</div>
+                <div class="grid-item first-row first-row-center">Azioni</div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">
-                    <label class="name-grid">Aldo Baglio</label>
+                    <span class="name-grid">Aldo Baglio</span>
                 </div>
                 <div class="grid-item grid-center">32</div>
-                <div class="grid-item grid-center fisrt-row-left">Comico Professionista</div>
+                <div class="grid-item grid-center first-row-center">Comico Professionista</div>
                 <div class="grid-item grid-center">
                     <a href="#" class="grid-link">Cancella</a>
                 </div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">
-                    <label class="name-grid">Aldo Baglio</label>
+                    <span class="name-grid">Aldo Baglio</span>
                 </div>
                 <div class="grid-item grid-center">32</div>
-                <div class="grid-item grid-center fisrt-row-left">Comico Professionista</div>
+                <div class="grid-item grid-center first-row-center">Comico Professionista</div>
                 <div class="grid-item grid-center">
                     <a href="#" class="grid-link">Cancella</a>
                 </div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">
-                    <label class="name-grid">Aldo Baglio</label>
+                    <span class="name-grid">Aldo Baglio</span>
                 </div>
                 <div class="grid-item grid-center">32</div>
-                <div class="grid-item grid-center fisrt-row-left">Comico Professionista</div>
+                <div class="grid-item grid-center first-row-center">Comico Professionista</div>
                 <div class="grid-item grid-center">
                     <a href="#" class="grid-link">Cancella</a>
                 </div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">
-                    <label class="name-grid">Aldo Baglio</label>
+                    <span class="name-grid">Aldo Baglio</span>
                 </div>
                 <div class="grid-item grid-center">32</div>
-                <div class="grid-item grid-center fisrt-row-left">Comico Professionista</div>
+                <div class="grid-item grid-center first-row-center">Comico Professionista</div>
                 <div class="grid-item grid-center">
                     <a href="#" class="grid-link">Cancella</a>
                 </div>
                 <div class="grid-item grid-user">
                     <img src="img/grid.png" alt="Aldo Baglio">
-                    <label class="name-grid">Aldo Baglio</label>
+                    <span class="name-grid">Aldo Baglio</span>
                 </div>
                 <div class="grid-item grid-center">32</div>
-                <div class="grid-item grid-center fisrt-row-left">Comico Professionista</div>
+                <div class="grid-item grid-center first-row-center">Comico Professionista</div>
                 <div class="grid-item grid-center">
                     <a href="#" class="grid-link">Cancella</a>
                 </div>

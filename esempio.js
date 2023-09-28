@@ -1,55 +1,51 @@
 $(document).ready(function () {
     $('#form').submit(function (event) {
         event.preventDefault();
-        formValidator();
-    });
-    
-    $('#text-message').on('input', function () {
-        $('#text-message').css('border-color', '#ADADAD');
+        validateForm();
     });
 });
 
-function formValidator() {
+function validateForm() {
     const phone = $('#phone');
     const email = $('#email');
     const phoneValue = phone.val();
     const emailValue = email.val();
-    const labelPhoneError = $('#phone-error');
-    const labelMailError = $('#mail-error');
+    const phoneError = $('#phone-error');
+    const mailError = $('#mail-error');
 
     if (isNaN(phoneValue) || phoneValue.length < 1) {
         phone.css('border-color', '#FF0000');
-        labelPhoneError.attr('title', 'TELEFONO NON VALIDO');
+        phoneError.attr('title', 'TELEFONO NON VALIDO');
     } else {
         phone.css('border-color', '#ADADAD');
-        labelPhoneError.attr('title', '');
+        phoneError.attr('title', '');
     }
 
     if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1) {
         email.css('border-color', '#FF0000');
-        labelMailError.attr('title', 'MAIL NON VALIDA');
+        mailError.attr('title', 'MAIL NON VALIDA');
     } else {
         email.css('border-color', '#ADADAD');
-        labelMailError.attr('title', '');
+        mailError.attr('title', '');
     }
 }
 
-function sendMessage() {
+function messageSend() {
     const chat = $('#chat-box');
     const textArea = $('#text-message');
     let text = textArea.val();
     if(text !== '') {
-        const p = $('<p></p>').addClass('sent-message right-message').text(text);
-        const trinagle = $('<p></p>').addClass('triangle triangle-down');
-        chat.append(p);
-        chat.append(trinagle);
+        const div = $('<div ></div> ').addClass('sent-message right-message').text(text);
+        const trinagle = $('<div></div>').addClass('triangle triangle-down');
+        div.append(trinagle);
+        chat.append(div);
         textArea.val('');
 
         setTimeout(() => {
-            const trinagleResponse = $('<p></p>').addClass('triangle triangle-up');
-            const pResponse = $('<p></p>').addClass('received-message left-message').text('Miiinchia!');
+            const trinagleResponse = $('<div></div>').addClass('triangle triangle-up');
+            const divResponse = $('<div></div>').addClass('received-message left-message').text('Miiinchia!');
+            trinagleResponse.append(divResponse);
             chat.append(trinagleResponse);
-            chat.append(pResponse);
         }, 2000);
     }
 }
@@ -63,13 +59,13 @@ async function gridReload() {
     const headings = ['Clienti', 'Email', 'Telefono', 'Azioni'];
 
     for (const heading of headings) {
-        const div = $('<div></div>').addClass('grid-item font-normal first-row').text(heading);
+        const div = $('<div></div>').addClass('grid-item first-row first-row-center').text(heading);
         grid.append(div);
     }
 
     data.forEach((element, index) => {
         grid.append(...['name', 'email', 'phone'].map(item => {
-            const div = $('<div></div>').addClass('grid-item font-normal grid-center').attr('data-id', element.id).text(element[item]);
+            const div = $('<div></div>').addClass('grid-item grid-center').attr('data-id', element.id).text(element[item]);
             return div;
         }));
         

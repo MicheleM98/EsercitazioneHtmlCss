@@ -75,11 +75,20 @@ body, input, button, textarea {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-form p {
+form div {
     font-size: 22px;
     color: #ADADAD;
-    padding-bottom: 40px;
-    line-height: 35px;
+    padding-bottom: 10px;
+}
+
+form {
+    padding: 40px 0px;
+}
+
+div {
+    font-size: 22px;
+    color: #ADADAD;
+    padding-bottom: 10px;
 }
 
 .text-box {
@@ -169,7 +178,6 @@ form textarea{
 }
 
 .chat {
-    position: relative;
     background: #FFFFFF;
     border: 1px solid #B6BDC1;
     padding: 50px 70px 40px;
@@ -216,6 +224,7 @@ form textarea{
     padding: 25px;
     font-size: 13px;
     text-align: center;
+    color: #333333;
 }
 
 .first-row {
@@ -229,7 +238,7 @@ form textarea{
     text-align: left;
 }
 
-.fisrt-row-center {
+.first-row-center {
     text-align: center;
 }
 
@@ -256,16 +265,16 @@ form textarea{
     height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
+    position: relative;
 }
 
 .triangle-up {
     border-bottom: 10px solid #E6F7FF;
-    margin-left: 10px;
 }
 
 .triangle-down {
     border-top: 10px solid #F4F6F7;
-    margin-left: 775px;
+    margin-left: auto;
 }
 
 .text-error::after {
