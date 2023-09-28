@@ -56,7 +56,10 @@ async function gridReload() {
     const data = await response.json();
     grid.html('');
 
-    const headings = ['Clienti', 'Email', 'Telefono', 'Azioni'];
+    const headings = ['Email', 'Telefono', 'Azioni'];
+
+    const div = $('<div></div>').addClass('grid-item first-row first-row-left').text('Clienti');
+    grid.append(div);
 
     for (const heading of headings) {
         const div = $('<div></div>').addClass('grid-item first-row first-row-center').text(heading);
@@ -69,7 +72,7 @@ async function gridReload() {
             return div;
         }));
         
-        const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item font-normal grid-center');
+        const divButton = $('<div></div>').attr('data-id', element.id).addClass('grid-item grid-center');
         const button = $('<button></button>').addClass('grid-link').text('Cancella');
         divButton.append(button);
         button.click(() => removeRecord(element.id));
