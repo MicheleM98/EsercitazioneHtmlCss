@@ -60,7 +60,7 @@ async function gridReload() {
 
     const headings = ['Email', 'Telefono', 'Azioni'];
 
-    const div = $('<div></div>').addClass('grid-item first-row first-row-left').text('Clienti');
+    const div = $('<div></div>').addClass('grid-item first-row first-row-left').text('Cliente');
     grid.append(div);
 
     for (const heading of headings) {

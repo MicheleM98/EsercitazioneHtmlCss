@@ -155,7 +155,6 @@ form textarea{
     font-size: 14px;
     text-align: center;
     justify-content: center;
-    display: block;
     border-radius: 0 5px 5px 0;
     white-space: nowrap;
 }
@@ -214,7 +213,12 @@ form textarea{
 .grid-container {
     padding-bottom: 150px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
+}
+
+.grid-container > div:nth-child(4n - 3) {
+    text-align: left;
+    padding-left: 35px;
 }
 
 .grid-item {
@@ -234,7 +238,6 @@ form textarea{
 
 .first-row-left {
     text-align: left;
-    padding-left: 75px;
 }
 
 .first-row-center {
@@ -280,10 +283,7 @@ form textarea{
 
 .text-error::after {
     color: #FF0000;
-    display: block;
     content: attr(title);
-    top: -5px;
-    left: 0;
     font-size: x-small;
 }
 
