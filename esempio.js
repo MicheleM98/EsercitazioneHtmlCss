@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $('#form').submit(function (event) {
         event.preventDefault();
-        validateForm();
+        formValidate();
     });
 });
 
-function validateForm() {
+function formValidate() {
     const phone = $('#phone');
     const email = $('#email');
     const phoneValue = phone.val();
